@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://janchristopherbuen.github.io/portfolio/sitemap.xml
