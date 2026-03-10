@@ -116,13 +116,9 @@ site:janchristopherbuen.github.io
 Manual inspection of the HTML `<head>` section confirmed that no `noindex` directive is present.
 
 Example metadata found:
+![HTML Head Metadata Inspection](images/check-robots-meta-tag.png)
 
-```html
-<title>Jan Christopher Buen | Technical SEO Portfolio</title>
 
-<meta name="description"
-content="Entry-level Technical SEO specialist and web developer experienced in website audits, crawl diagnostics, structured data, and SEO tools including Semrush, Ahrefs, and Google Search Console.">
-```
 
 ### Conclusion
 
