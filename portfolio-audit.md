@@ -182,7 +182,7 @@ This improves:
 
 ### Screenshot
 
-![Project Link Structure](images/internal-links.png)
+![Project Link Structure](evaluate-internal-link.png)
 
 ### Example Links
 
@@ -211,7 +211,7 @@ Technical SEO Site Architecture Analysis
 
 ### Screenshot
 
-![Schema Validation](images/schema-validation.png)
+![Schema Validation](check-structured-data.png)
 
 ### Schema Type Implemented
 
@@ -247,7 +247,7 @@ This structured data helps search engines understand the entity associated with 
 
 ### Screenshot
 
-![Robots.txt Configuration](images/robots-config.png)
+![Robots.txt Configuration](robot.txt.png)
 
 ### robots.txt File
 
@@ -273,7 +273,7 @@ No crawl restrictions were detected.
 
 ### Screenshot
 
-![XML Sitemap](images/sitemap-structure.png)
+![XML Sitemap](images/sitemap.xml.png)
 
 ### Sitemap Entries
 
