@@ -247,7 +247,7 @@ This structured data helps search engines understand the entity associated with 
 
 ### Screenshot
 
-![Robots.txt Configuration](images/robot.txt.png)
+![Robots.txt Configuration](images/robot.txt)
 
 ### robots.txt File
 
@@ -273,7 +273,7 @@ No crawl restrictions were detected.
 
 ### Screenshot
 
-![XML Sitemap](images/sitemap.xml.png)
+![XML Sitemap](images/sitemap.xml)
 
 ### Sitemap Entries
 
