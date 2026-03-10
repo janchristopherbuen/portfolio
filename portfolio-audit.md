@@ -69,7 +69,7 @@ Because the site runs on **GitHub Pages static hosting**, it benefits from fast 
 
 ### Screenshot
 
-![Core Web Vitals Test](images/core-web-vitals.png)
+![Core Web Vitals Test](images/test-coreweb-vitals.png)
 
 ### Metrics
 
