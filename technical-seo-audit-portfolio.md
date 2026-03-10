@@ -44,7 +44,7 @@ The website was evaluated using a structured technical SEO process combining aut
 
 ### Screenshot
 
-![Lighthouse Performance Audit](images/lighthouse-audit.png)
+![Lighthouse Performance Audit](images/baseline-technical-test.png)
 
 ### Results
 
@@ -72,7 +72,7 @@ Because the site is hosted on **GitHub Pages**, it benefits from fast server res
 
 ### Screenshot
 
-![Core Web Vitals Test](images/core-web-vitals.png)
+![Core Web Vitals Test](images/test-coreweb-vitals.png)
 
 ### Metrics
 
@@ -101,7 +101,7 @@ The likely cause is the **hero image loading above the fold**.
 
 ### Screenshot
 
-![HTML Head Metadata Inspection](images/html-head-metadata.png)
+![HTML Head Metadata Inspection](images/google-search-query.png)
 
 ### Test Method
 
@@ -134,7 +134,7 @@ The absence of `noindex` directives confirms that the page is **eligible for ind
 
 ### Screenshot
 
-![HTML Metadata](images/html-head-metadata.png)
+![HTML Metadata](images/metadata.png)
 
 ### Title Tag
 
@@ -172,7 +172,7 @@ Technical SEO portfolio showcasing SEO audits, crawl diagnostics, structured dat
 
 ### Screenshot
 
-![Heading Structure](images/h1-structure.png)
+![Heading Structure](images/h1.png)
 
 ### Current Structure
 
@@ -250,7 +250,7 @@ This provides stronger relevance signals for image search.
 
 ### Screenshot
 
-![Internal Linking Structure](images/internal-links.png)
+![Internal Linking Structure](images/evaluate-internal-link.png)
 
 ### Example Links
 
@@ -281,7 +281,7 @@ Technical SEO Site Architecture Audit
 
 ### Screenshot
 
-![Schema Validation](images/schema-validation.png)
+![Schema Validation](images/check-structured-data.png)
 
 ### Schema Type Implemented
 
@@ -318,7 +318,7 @@ The structured data successfully defines the entity associated with the portfoli
 
 ### Screenshot
 
-![Robots Configuration](images/robots-config.png)
+![Robots Configuration](images/robots.txt)
 
 ### robots.txt
 
@@ -344,7 +344,7 @@ No crawl restrictions were detected.
 
 ### Screenshot
 
-![XML Sitemap](images/sitemap-structure.png)
+![XML Sitemap](images/sitemap.xml)
 
 ### Sitemap Entries
 
