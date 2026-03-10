@@ -1,94 +1,127 @@
-/* ===============================
-SMOOTH SCROLL WITH OFFSET
-=============================== */
+/* =================================================
+   DOM READY
+================================================= */
 
-const headerOffset = 80
+document.addEventListener("DOMContentLoaded", () => {
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  /* =================================================
+     MOBILE NAVIGATION
+  ================================================= */
 
-anchor.addEventListener("click", function(e){
+  const navbar = document.querySelector(".navbar");
+  const navLinks = document.querySelector(".nav-links");
 
-const targetID = this.getAttribute("href")
+  if (navbar && navLinks) {
 
-if(targetID === "#") return
+    const menuToggle = document.createElement("div");
+    menuToggle.className = "menu-toggle";
+    menuToggle.innerHTML = "☰";
 
-const targetElement = document.querySelector(targetID)
+    navbar.appendChild(menuToggle);
 
-if(!targetElement) return
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("nav-active");
+    });
 
-e.preventDefault()
+    /* close mobile menu after clicking link */
 
-const elementPosition = targetElement.getBoundingClientRect().top
-const offsetPosition = elementPosition + window.pageYOffset - headerOffset
+    document.querySelectorAll(".nav-links a").forEach(link => {
 
-window.scrollTo({
-top: offsetPosition,
-behavior: "smooth"
-})
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("nav-active");
+      });
 
-})
+    });
 
-})
+  }
 
+  /* =================================================
+     SCROLL REVEAL ANIMATION
+  ================================================= */
 
-/* ===============================
-ACTIVE NAVIGATION LINK
-=============================== */
+  const observerOptions = {
+    threshold: 0.15,
+    rootMargin: "0px 0px -50px 0px"
+  };
 
-const sections = document.querySelectorAll("section")
-const navLinks = document.querySelectorAll(".nav-links a")
+  const revealObserver = new IntersectionObserver((entries, observer) => {
 
-window.addEventListener("scroll", () => {
+    entries.forEach(entry => {
 
-let current = ""
+      if (entry.isIntersecting) {
 
-sections.forEach(section => {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
 
-const sectionTop = section.offsetTop - 120
-const sectionHeight = section.clientHeight
+      }
 
-if(pageYOffset >= sectionTop){
-current = section.getAttribute("id")
-}
+    });
 
-})
-
-navLinks.forEach(link => {
-
-link.classList.remove("active")
-
-if(link.getAttribute("href") === "#" + current){
-link.classList.add("active")
-}
-
-})
-
-})
+  }, observerOptions);
 
 
-/* ===============================
-SCROLL REVEAL ANIMATION
-=============================== */
+  const revealElements = document.querySelectorAll(
+    ".project-card, .skill-badge, .certificate-card, .highlight"
+  );
 
-const reveals = document.querySelectorAll(".project-card, .certificate-card, .skills-list li")
+  revealElements.forEach(el => {
+    revealObserver.observe(el);
+  });
 
-function revealOnScroll(){
+  /* =================================================
+     ACTIVE NAVIGATION HIGHLIGHT
+  ================================================= */
 
-const windowHeight = window.innerHeight
+  const sections = document.querySelectorAll("section");
+  const navItems = document.querySelectorAll(".nav-links a");
 
-reveals.forEach(element => {
+  window.addEventListener("scroll", () => {
 
-const elementTop = element.getBoundingClientRect().top
-const revealPoint = 120
+    let current = "";
 
-if(elementTop < windowHeight - revealPoint){
-element.classList.add("active")
-}
+    sections.forEach(section => {
 
-})
+      const sectionTop = section.offsetTop - 120;
+      const sectionHeight = section.offsetHeight;
 
-}
+      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+        current = section.getAttribute("id");
+      }
 
-window.addEventListener("scroll", revealOnScroll)
+    });
 
-revealOnScroll()
+    navItems.forEach(link => {
+
+      link.classList.remove("active");
+
+      if (current && link.getAttribute("href").includes(current)) {
+        link.classList.add("active");
+      }
+
+    });
+
+  });
+
+  /* =================================================
+     SCROLL PROGRESS BAR
+  ================================================= */
+
+  const progressBar = document.createElement("div");
+  progressBar.className = "scroll-progress";
+
+  document.body.appendChild(progressBar);
+
+  window.addEventListener("scroll", () => {
+
+    const scrollTop = document.documentElement.scrollTop;
+    const scrollHeight =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+
+    const scrollPercent = (scrollTop / scrollHeight) * 100;
+
+    progressBar.style.width = scrollPercent + "%";
+
+  });
+
+});
