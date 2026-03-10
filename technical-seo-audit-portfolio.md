@@ -50,7 +50,7 @@ The website was evaluated using a structured technical SEO process combining aut
 
 | Category       | Score |
 | -------------- | ----- |
-| Performance    | 92    |
+| Performance    | 90    |
 | Accessibility  | 95    |
 | Best Practices | 96    |
 | SEO            | 100   |
