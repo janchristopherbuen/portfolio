@@ -116,6 +116,7 @@ site:janchristopherbuen.github.io
 Manual inspection of the HTML `<head>` section confirmed that no `noindex` directive is present.
 
 Example metadata found:
+
 ![HTML Head Metadata Inspection](images/check-robots-meta-tag.png)
 
 ### Conclusion
