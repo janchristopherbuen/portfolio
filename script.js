@@ -1,13 +1,25 @@
+const headerOffset = 80
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
-anchor.addEventListener("click", function(e) {
+anchor.addEventListener("click", function(e){
+
+const targetID = this.getAttribute("href")
+
+if(targetID === "#") return
+
+const targetElement = document.querySelector(targetID)
+
+if(!targetElement) return
 
 e.preventDefault()
 
-document.querySelector(this.getAttribute("href")).scrollIntoView({
+const elementPosition = targetElement.getBoundingClientRect().top
+const offsetPosition = elementPosition + window.pageYOffset - headerOffset
 
-behavior:"smooth"
-
+window.scrollTo({
+top: offsetPosition,
+behavior: "smooth"
 })
 
 })
