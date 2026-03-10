@@ -48,7 +48,7 @@ The Lighthouse audit shows strong technical performance.
 
 | Category       | Score |
 | -------------- | ----- |
-| Performance    | 92    |
+| Performance    | 90    |
 | Accessibility  | 95    |
 | Best Practices | 96    |
 | SEO            | 100   |
@@ -98,7 +98,7 @@ This likely occurs due to the **hero profile image loading above the fold**.
 
 ### Screenshot
 
-![Google Index Result](images/google-index-check.png)
+![Google Index Result](images/google-search-query.png)
 
 ### Test Method
 
