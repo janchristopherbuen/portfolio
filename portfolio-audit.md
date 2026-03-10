@@ -126,19 +126,13 @@ Indexability configuration is correct. No blocking directives were detected.
 
 ### Screenshot
 
-![HTML Head Metadata](images/metadata.png)
-
 ### Title Tag
 
-```
-Jan Christopher Buen | Technical SEO Portfolio
-```
+![HTML Head Metadata](images/title-tag.png)
 
 ### Meta Description
 
-```
-Entry-level Technical SEO specialist and web developer experienced in website audits, crawl diagnostics, structured data, and SEO tools.
-```
+![HTML Head Metadata](images/metadata.png)
 
 ### Analysis
 
