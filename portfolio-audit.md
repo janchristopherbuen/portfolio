@@ -126,7 +126,7 @@ Indexability configuration is correct. No blocking directives were detected.
 
 ### Screenshot
 
-![HTML Head Metadata](images/html-head-metadata.png)
+![HTML Head Metadata](images/metadata.png)
 
 ### Title Tag
 
