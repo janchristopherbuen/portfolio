@@ -118,8 +118,6 @@ Manual inspection of the HTML `<head>` section confirmed that no `noindex` direc
 Example metadata found:
 ![HTML Head Metadata Inspection](images/check-robots-meta-tag.png)
 
-
-
 ### Conclusion
 
 The absence of `noindex` directives confirms that the page is **eligible for indexing by search engines**.
