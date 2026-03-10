@@ -159,10 +159,6 @@ Technical SEO portfolio showcasing SEO audits, crawl diagnostics, structured dat
 ### Screenshot
 
 ![Heading Structure](images/h1.png)
-![Heading Structure](images/h2-about-me.png)
-![Heading Structure](images/h2-skills.png)
-![Heading Structure](images/h2-project.png)
-![Heading Structure](images/h2-contact.png)
 
 ### Analysis
 
