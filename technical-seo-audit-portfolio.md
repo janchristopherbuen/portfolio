@@ -134,7 +134,7 @@ The absence of `noindex` directives confirms that the page is **eligible for ind
 
 ### Screenshot
 
-![HTML Metadata](images/metadata.png)
+![HTML Metadata](images/title-tag.png)
 
 ### Title Tag
 
@@ -144,9 +144,7 @@ Jan Christopher Buen | Technical SEO Portfolio
 
 ### Meta Description
 
-```
-Entry-level Technical SEO specialist and web developer experienced in website audits, crawl diagnostics, structured data, and SEO tools.
-```
+![HTML Metadata](images/metadata.png)
 
 ### Analysis
 
