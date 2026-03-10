@@ -311,7 +311,7 @@ The structured data successfully defines the entity associated with the portfoli
 
 ### Screenshot
 
-![Robots Configuration](images/robots.txt)
+![Robots Configuration](images/robot.txt)
 
 ### robots.txt
 
