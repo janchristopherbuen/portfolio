@@ -158,16 +158,11 @@ Technical SEO portfolio showcasing SEO audits, crawl diagnostics, structured dat
 
 ### Screenshot
 
-![Heading Structure](images/h1-structure.png)
-
-### Current Structure
-
-```
-H1: Hello, I'm JC
-H2: About Me
-H2: Skills
-H2: Projects
-```
+![Heading Structure](images/h1.png)
+![Heading Structure](images/h2-about-me.png)
+![Heading Structure](images/h2-skills.png)
+![Heading Structure](images/h2-project.png)
+![Heading Structure](images/h2-contact.png)
 
 ### Analysis
 
