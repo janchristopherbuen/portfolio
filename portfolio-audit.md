@@ -40,7 +40,7 @@ The audit followed a structured technical SEO workflow using both automated diag
 
 ### Screenshot
 
-![Lighthouse Performance Audit](images/lighthouse-audit.png)
+![Lighthouse Performance Audit](images/baseline-technical-test.png)
 
 ### Analysis
 
