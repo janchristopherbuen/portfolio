@@ -424,10 +424,7 @@ The original meta description exceeded the recommended length of 160 characters,
 
 Original description:
 
-```html id="meta_before"
-<meta name="description"
-content="Entry-level Technical SEO specialist and web developer experienced in website audits, crawl diagnostics, structured data, and SEO tools including Semrush, Ahrefs, and Google Search Console.">
-```
+![HTML Metadata](images/metadata.png)
 
 ### Implementation
 
@@ -435,10 +432,7 @@ The meta description was shortened and refined to emphasize the core focus of th
 
 Updated description:
 
-```html id="meta_after"
-<meta name="description"
-content="Technical SEO portfolio showcasing SEO audits, crawl diagnostics, structured data implementation, and website optimization projects.">
-```
+![HTML Metadata](images/metadata-implemented.png)
 
 ### Result
 
