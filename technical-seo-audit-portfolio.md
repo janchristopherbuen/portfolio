@@ -396,9 +396,7 @@ The original H1 heading did not contain the primary keyword and did not clearly 
 
 Original heading:
 
-```html id="h1_before"
-<h1>Hello, I'm <span>JC</span></h1>
-```
+![Heading Structure](images/h1.png)
 
 ### Implementation
 
@@ -406,9 +404,7 @@ The heading was updated to include the primary keyword **Technical SEO Portfolio
 
 Updated heading:
 
-```html id="h1_after"
-<h1>Technical SEO Specialist Portfolio – Jan Christopher Buen</h1>
-```
+![Heading Structure](images/h1-implemented.png)
 
 ### Result
 
