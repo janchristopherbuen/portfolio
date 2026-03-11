@@ -492,14 +492,6 @@ Updated filename:
 
 Optimized profile image using WebP format, descriptive filename, and keyword-focused alt text to improve SEO, accessibility, and page performance.
 
-```html id="image_code"
-<img src="/images/jan-christopher-buen-technical-seo-specialist.webp"
-alt="Portrait of Jan Christopher Buen"
-loading="lazy"
-width="400"
-height="400">
-```
-
 ### Result
 
 Benefits include:
@@ -520,10 +512,7 @@ The page originally lacked a canonical tag.
 
 A canonical tag was added within the HTML `<head>` section.
 
-```html id="canonical_fix"
-<link rel="canonical"
-href="https://janchristopherbuen.github.io/portfolio/">
-```
+![Canonical Tag](images/implemented-canonicaltag.png)
 
 ### Result
 
