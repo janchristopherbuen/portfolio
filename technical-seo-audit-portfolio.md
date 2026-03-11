@@ -490,10 +490,10 @@ Updated filename:
 
 ![Image Element Inspection](images/implemented-image-seo.png)
 
-The image markup remained optimized with alt text and lazy loading.
+Optimized profile image using WebP format, descriptive filename, and keyword-focused alt text to improve SEO, accessibility, and page performance.
 
 ```html id="image_code"
-<img src="images/jan-christopher-buen-technical-seo-specialist.png"
+<img src="/images/jan-christopher-buen-technical-seo-specialist.webp"
 alt="Portrait of Jan Christopher Buen"
 loading="lazy"
 width="400"
