@@ -232,7 +232,7 @@ profile.png
 Recommended filename:
 
 ```
-jan-christopher-buen-technical-seo-specialist.png
+jan-christopher-buen-technical-seo-specialist.webp
 ```
 
 This provides stronger relevance signals for image search.
@@ -480,9 +480,7 @@ The original image filename was generic.
 
 Original filename:
 
-```text id="image_before"
-profile.png
-```
+![Image Element Inspection](images/image-seo.png)
 
 ### Implementation
 
@@ -490,9 +488,7 @@ The image filename was updated to include descriptive keywords.
 
 Updated filename:
 
-```text id="image_after"
-jan-christopher-buen-technical-seo-specialist.png
-```
+![Image Element Inspection](images/implemented-image-seo.png)
 
 The image markup remained optimized with alt text and lazy loading.
 
