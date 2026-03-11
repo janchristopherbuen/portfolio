@@ -536,10 +536,7 @@ Original:
 
 Updated Open Graph URL:
 
-```html id="og_after"
-<meta property="og:url"
-content="https://janchristopherbuen.github.io/portfolio/">
-```
+![Open Graph](images/implemented-open-graph.png)
 
 ### Result
 
