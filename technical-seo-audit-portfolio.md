@@ -452,9 +452,7 @@ Project links originally used generic anchor text such as "View Project" or "Vie
 
 Example:
 
-```html id="anchor_before"
-<a href="seo-audit-report.md">View Report</a>
-```
+![Internal Linking Structure](images/evaluate-internal-link.png)
 
 ### Implementation
 
@@ -462,11 +460,7 @@ Anchor text was updated to provide descriptive context about the linked content.
 
 Updated example:
 
-```html id="anchor_after"
-<a href="seo-audit-report.md">
-Technical SEO Indexability Audit Report
-</a>
-```
+![Internal Linking Structure](images/implemented-internal-link.png)
 
 ### Result
 
