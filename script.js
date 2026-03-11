@@ -6,49 +6,83 @@ initScrollProgress();
 
 });
 
+/* ================================
+MOBILE MENU
+================================ */
+
 function initMobileMenu(){
 
-const navbar=document.querySelector(".navbar");
-const navLinks=document.querySelector(".nav-links");
+const navbar = document.querySelector(".navbar");
+const navLinks = document.querySelector(".nav-links");
 
 if(!navbar || !navLinks) return;
 
-const menuToggle=document.createElement("div");
+/* Prevent duplicate menu toggle */
+if(navbar.querySelector(".menu-toggle")) return;
 
-menuToggle.className="menu-toggle";
-menuToggle.innerHTML="☰";
+const menuToggle = document.createElement("button");
+
+menuToggle.className = "menu-toggle";
+menuToggle.innerHTML = "☰";
 
 menuToggle.setAttribute("aria-label","Toggle navigation menu");
 menuToggle.setAttribute("aria-expanded","false");
+menuToggle.setAttribute("aria-controls","primary-navigation");
+
+navLinks.id = "primary-navigation";
 
 navbar.appendChild(menuToggle);
 
-menuToggle.addEventListener("click",()=>{
+menuToggle.addEventListener("click", () => {
 
-navLinks.classList.toggle("nav-active");
+const isOpen = navLinks.classList.toggle("nav-active");
 
-const expanded=
-menuToggle.getAttribute("aria-expanded")==="true";
-
-menuToggle.setAttribute("aria-expanded",!expanded);
+menuToggle.setAttribute("aria-expanded", isOpen);
 
 });
 
-document.querySelectorAll(".nav-links a").forEach(link=>{
+/* Close menu when clicking a link */
 
-link.addEventListener("click",()=>{
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+link.addEventListener("click", () => {
+
 navLinks.classList.remove("nav-active");
+menuToggle.setAttribute("aria-expanded","false");
+
 });
+
+});
+
+/* Close menu with ESC key */
+
+document.addEventListener("keydown", e => {
+
+if(e.key === "Escape"){
+
+navLinks.classList.remove("nav-active");
+menuToggle.setAttribute("aria-expanded","false");
+
+}
 
 });
 
 }
 
+/* ================================
+SCROLL REVEAL
+================================ */
+
 function initScrollReveal(){
 
-const observer=new IntersectionObserver(entries=>{
+const prefersReducedMotion =
+window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-entries.forEach(entry=>{
+if(prefersReducedMotion) return;
+
+const observer = new IntersectionObserver(entries => {
+
+entries.forEach(entry => {
 
 if(entry.isIntersecting){
 
@@ -59,54 +93,58 @@ observer.unobserve(entry.target);
 
 });
 
-},{threshold:0.15});
+},{ threshold:0.15 });
 
-const elements=document.querySelectorAll(
+const elements = document.querySelectorAll(
 ".project-card, .skill-badge, .certificate-card, .highlight"
 );
 
-elements.forEach(el=>observer.observe(el));
+elements.forEach(el => observer.observe(el));
 
 }
+
+/* ================================
+SCROLL PROGRESS BAR
+================================ */
 
 function initScrollProgress(){
 
-const progressBar=document.createElement("div");
+const progressBar = document.createElement("div");
 
-progressBar.className="scroll-progress";
+progressBar.className = "scroll-progress";
 
 document.body.appendChild(progressBar);
 
-let ticking=false;
+let ticking = false;
 
-window.addEventListener("scroll",()=>{
+window.addEventListener("scroll", () => {
 
 if(!ticking){
 
-window.requestAnimationFrame(()=>{
+window.requestAnimationFrame(() => {
 
-const scrollTop=document.documentElement.scrollTop;
+const doc = document.documentElement;
 
-const scrollHeight=
-document.documentElement.scrollHeight-
-document.documentElement.clientHeight;
+const scrollTop = doc.scrollTop;
 
-if(scrollHeight>0){
+const scrollHeight = doc.scrollHeight - doc.clientHeight;
 
-const percent=(scrollTop/scrollHeight)*100;
+if(scrollHeight > 0){
 
-progressBar.style.width=percent+"%";
+const percent = (scrollTop / scrollHeight) * 100;
 
-}
-
-ticking=false;
-
-});
-
-ticking=true;
+progressBar.style.width = percent + "%";
 
 }
 
+ticking = false;
+
 });
+
+ticking = true;
+
+}
+
+},{ passive:true });
 
 }
