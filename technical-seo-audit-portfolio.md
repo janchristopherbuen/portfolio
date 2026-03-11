@@ -263,8 +263,8 @@ Search engines rely on anchor text to understand the content of linked pages.
 Examples:
 
 ```
-Technical SEO Audit Case Study
-Indexability Technical SEO Audit Report
+SEO Blog Optimization Case Study
+Indexability Audit Report
 Technical SEO Site Architecture Audit
 ```
 
