@@ -1,87 +1,57 @@
-// core.js - reusable UI helpers (mobile menu, scroll reveal, progress bar)
+export function initNavigation() {
+  const toggle = document.querySelector(".nav-toggle");
+  const nav = document.querySelector(".site-nav");
 
-export function initMobileMenu(){
-    const navbar = document.querySelector(".navbar");
-    const navLinks = document.querySelector(".nav-links");
-
-    if(!navbar || !navLinks) return;
-
-    /* Prevent duplicate menu toggle */
-    if(navbar.querySelector(".menu-toggle")) return;
-
-    const menuToggle = document.createElement("button");
-
-    menuToggle.className = "menu-toggle";
-    menuToggle.innerHTML = "☰";
-
-    menuToggle.setAttribute("aria-label","Toggle navigation menu");
-    menuToggle.setAttribute("aria-expanded","false");
-    menuToggle.setAttribute("aria-controls","primary-navigation");
-
-    navLinks.id = "primary-navigation";
-
-    navbar.appendChild(menuToggle);
-
-    menuToggle.addEventListener("click", () => {
-        const isOpen = navLinks.classList.toggle("nav-active");
-        menuToggle.setAttribute("aria-expanded", isOpen);
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => {
+      const open = nav.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", String(open));
     });
 
-    document.querySelectorAll(".nav-links a").forEach(link => {
-        link.addEventListener("click", () => {
-            navLinks.classList.remove("nav-active");
-            menuToggle.setAttribute("aria-expanded","false");
-        });
+    nav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("is-open");
+        toggle.setAttribute("aria-expanded", "false");
+      });
     });
 
-    document.addEventListener("keydown", e => {
-        if(e.key === "Escape"){
-            navLinks.classList.remove("nav-active");
-            menuToggle.setAttribute("aria-expanded","false");
-        }
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        nav.classList.remove("is-open");
+        toggle.setAttribute("aria-expanded", "false");
+      }
     });
+  }
+
+  const currentPath = window.location.pathname.replace(/\/+$/, "");
+  document.querySelectorAll("[data-nav]").forEach((link) => {
+    const href = new URL(link.getAttribute("href"), window.location.href).pathname.replace(/\/+$/, "");
+    if (href === currentPath || (href.endsWith("/index.html") && currentPath.endsWith("/"))) {
+      link.setAttribute("aria-current", "page");
+    }
+  });
 }
 
-export function initScrollReveal(){
-    const prefersReducedMotion =
-        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if(prefersReducedMotion) return;
+export function initReveal() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.querySelectorAll("[data-reveal]").forEach((node) => node.classList.add("is-visible"));
+    return;
+  }
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting){
-                entry.target.classList.add("show");
-                observer.unobserve(entry.target);
-            }
-        });
-    },{ threshold:0.15 });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
 
-    const elements = document.querySelectorAll(
-        ".project-card, .skill-badge, .certificate-card, .highlight"
-    );
-    elements.forEach(el => observer.observe(el));
+  document.querySelectorAll("[data-reveal]").forEach((node) => observer.observe(node));
 }
 
-export function initScrollProgress(){
-    const progressBar = document.createElement("div");
-    progressBar.className = "scroll-progress";
-    document.body.appendChild(progressBar);
-
-    let ticking = false;
-
-    window.addEventListener("scroll", () => {
-        if(!ticking){
-            window.requestAnimationFrame(() => {
-                const doc = document.documentElement;
-                const scrollTop = doc.scrollTop;
-                const scrollHeight = doc.scrollHeight - doc.clientHeight;
-                if(scrollHeight > 0){
-                    const percent = (scrollTop / scrollHeight) * 100;
-                    progressBar.style.width = percent + "%";
-                }
-                ticking = false;
-            });
-            ticking = true;
-        }
-    },{ passive:true });
+export function initYear() {
+  document.querySelectorAll("[data-year]").forEach((node) => {
+    node.textContent = String(new Date().getFullYear());
+  });
 }

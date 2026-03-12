@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
 
-# explicitly allow GitHub Pages assets
-Allow: /assets/
-
 Sitemap: https://janchristopherbuen.github.io/portfolio/sitemap.xml

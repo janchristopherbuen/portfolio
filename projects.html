@@ -2,75 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects | Jan Christopher Buen</title>
-  <meta name="description" content="SEO project case studies covering GitHub repositories, technical SEO audits, indexability, site architecture, blog optimization, and portfolio SEO work.">
+  <meta name="description" content="Technical SEO case studies covering portfolio audits, indexability, site architecture, crawl analysis, and SEO implementation reviews.">
   <meta name="robots" content="index,follow">
+  <meta name="author" content="Jan Christopher Buen">
+  <meta name="theme-color" content="#0b1020">
   <link rel="canonical" href="https://janchristopherbuen.github.io/portfolio/projects.html">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta property="og:title" content="Projects | Jan Christopher Buen">
+  <meta property="og:description" content="Technical SEO case studies covering indexability, site architecture, performance, and implementation audits.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://janchristopherbuen.github.io/portfolio/projects.html">
+  <meta property="og:image" content="https://janchristopherbuen.github.io/portfolio/assets/images/baseline-technical-test.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Projects | Jan Christopher Buen">
+  <meta name="twitter:description" content="Technical SEO case studies covering indexability, site architecture, performance, and implementation audits.">
+  <meta name="twitter:image" content="https://janchristopherbuen.github.io/portfolio/assets/images/baseline-technical-test.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="bg-slate-950 text-slate-100">
-  <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/90 backdrop-blur">
-    <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4" aria-label="Primary navigation">
-      <a href="index.html" class="text-xl font-bold tracking-tight text-emerald-300">JC</a>
-      <div class="flex gap-6 text-sm text-slate-300">
-        <a href="index.html" class="hover:text-white">Home</a>
-        <a href="projects.html" class="text-white">Projects</a>
-        <a href="blog.html" class="hover:text-white">Blog</a>
-        <a href="contact.html" class="hover:text-white">Contact</a>
-      </div>
-    </nav>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Jan Christopher Buen home">JC</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+            <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="index.html" data-nav="index.html">Home</a>
+        <a href="about.html" data-nav="about.html">About</a>
+        <a href="projects.html" data-nav="projects.html">Projects</a>
+        <a href="tools/index.html" data-nav="tools/index.html">Tools</a>
+        <a href="blog.html" data-nav="blog.html">Blog</a>
+        <a href="certificates.html" data-nav="certificates.html">Certificates</a>
+        <a href="contact.html" data-nav="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="border-b border-white/10 bg-gradient-to-br from-slate-900 via-slate-950 to-emerald-950/40">
-      <div class="mx-auto max-w-6xl px-4 py-20">
-        <p class="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-emerald-300">Projects</p>
-        <h1 class="text-4xl font-black tracking-tight text-white md:text-6xl">SEO Project Case Studies</h1>
-        <p class="mt-4 max-w-3xl text-lg text-slate-300">Project pages sourced from repository documentation, audit files, and screenshots currently available in the portfolio workspace and cloned GitHub repositories.</p>
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero__content hero__content--narrow" data-reveal>
+        
+        <h1>Technical SEO case studies built for real portfolio review.</h1>
+        <p class="lead">Each project page documents the audit scope, evidence, screenshots, implementation details, and findings in a consistent technical documentation format.</p>
       </div>
     </section>
 
-    <section class="mx-auto max-w-6xl px-4 py-16">
-      <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-        <article class="rounded-3xl border border-white/10 bg-white/5 p-8">
-          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-300">GitHub Repository</p>
-          <h2 class="mt-4 text-2xl font-bold text-white">Technical SEO Portfolio</h2>
-          <p class="mt-4 text-slate-300">Assessment of technical factors that influence search engine crawling and site performance. This includes checking HTTP status codes, crawlability, and identifying technical barriers that could prevent pages from appearing in search results.</p>
-          <a href="projects/technical-seo-portfolio.html" class="mt-6 inline-flex rounded-full bg-emerald-300 px-5 py-3 font-semibold text-slate-950">Open project page</a>
+    <section class="section">
+      <div class="section__header" data-reveal>
+        
+        <h2>Live project pages</h2>
+        <p>All active portfolio case studies now live under <code>/projects/</code> and are linked from the homepage, sitemap, and internal related-project modules.</p>
+      </div>
+      <div class="grid grid--three">
+        <article class="card card--project" data-reveal>
+          <p class="tag">Portfolio Audit</p>
+          <h3>Technical SEO Audit</h3>
+          <p>Comprehensive analysis of crawlability, performance, structured data, metadata, images, and internal linking for the portfolio website.</p>
+          <a class="button button--secondary" href="projects/technical-seo-audit.html">View Case Study</a>
         </article>
-        <article class="rounded-3xl border border-white/10 bg-white/5 p-8">
-          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-sky-300">GitHub Repository</p>
-          <h2 class="mt-4 text-2xl font-bold text-white">SEO Blog Project</h2>
-          <p class="mt-4 text-slate-300">Technical SEO practice project demonstrating on-page SEO implementation, crawl management, indexing optimization, and SEO-friendly website structure using HTML and CSS.</p>
-          <a href="projects/seo-blog-project.html" class="mt-6 inline-flex rounded-full bg-sky-300 px-5 py-3 font-semibold text-slate-950">Open project page</a>
+        <article class="card card--project" data-reveal>
+          <p class="tag">Indexability</p>
+          <h3>Books to Scrape Indexability Audit</h3>
+          <p>Evaluation of robots.txt, XML sitemap coverage, meta robots directives, canonical implementation, and HTTP response behavior.</p>
+          <a class="button button--secondary" href="projects/indexability-audit.html">View Case Study</a>
         </article>
-        <article class="rounded-3xl border border-white/10 bg-white/5 p-8">
-          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-300">Portfolio Audit</p>
-          <h2 class="mt-4 text-2xl font-bold text-white">Technical SEO Audit: Personal Portfolio Website</h2>
-          <p class="mt-4 text-slate-300">Performance 90, Accessibility 95, Best Practices 96, SEO 100, Overall Technical SEO Score 89 / 100.</p>
-          <a href="projects/technical-seo-audit-portfolio.html" class="mt-6 inline-flex rounded-full bg-emerald-300 px-5 py-3 font-semibold text-slate-950">Open project page</a>
+        <article class="card card--project" data-reveal>
+          <p class="tag">Architecture</p>
+          <h3>Books to Scrape Site Architecture Audit</h3>
+          <p>Assessment of site hierarchy, crawl tree structure, crawl depth distribution, and internal linking flow.</p>
+          <a class="button button--secondary" href="projects/site-architecture-audit.html">View Case Study</a>
         </article>
-        <article class="rounded-3xl border border-white/10 bg-white/5 p-8">
-          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-300">SEO Blog Optimization</p>
-          <h2 class="mt-4 text-2xl font-bold text-white">Canonical tags, robots directives, and structured data improvements</h2>
-          <p class="mt-4 text-slate-300">Within three weeks, duplicate pages were de-indexed and organic traffic to blog posts increased by 18%.</p>
-          <a href="projects/project-seo-blog-optimization.html" class="mt-6 inline-flex rounded-full bg-emerald-300 px-5 py-3 font-semibold text-slate-950">Open project page</a>
+        <article class="card card--project" data-reveal>
+          <p class="tag">Technical Audit</p>
+          <h3>Books to Scrape Technical SEO Audit</h3>
+          <p>Full crawl and performance review covering metadata quality, response codes, PageSpeed metrics, and Core Web Vitals.</p>
+          <a class="button button--secondary" href="projects/books-to-scrape-technical-seo-audit.html">View Case Study</a>
         </article>
-        <article class="rounded-3xl border border-white/10 bg-white/5 p-8">
-          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-sky-300">Indexability Audit</p>
-          <h2 class="mt-4 text-2xl font-bold text-white">Solving Crawlability Issues: From 62% to 98% Index Coverage</h2>
-          <p class="mt-4 text-slate-300">Fixed crawlability and indexation issues. Improved index coverage from 62% to 98%.</p>
-          <a href="projects/project-indexability-audit.html" class="mt-6 inline-flex rounded-full bg-sky-300 px-5 py-3 font-semibold text-slate-950">Open project page</a>
-        </article>
-        <article class="rounded-3xl border border-white/10 bg-white/5 p-8">
-          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-violet-300">Site Architecture Audit</p>
-          <h2 class="mt-4 text-2xl font-bold text-white">Restructuring for Success: Optimal Internal Linking &amp; Crawl Paths</h2>
-          <p class="mt-4 text-slate-300">Reduced crawl depth by 40%. Increased organic sessions from orphan pages by 25%.</p>
-          <a href="projects/project-site-architecture-audit.html" class="mt-6 inline-flex rounded-full bg-violet-300 px-5 py-3 font-semibold text-slate-950">Open project page</a>
+        <article class="card card--project" data-reveal>
+          <p class="tag">SEO Blog</p>
+          <h3>SEO Blog Project Audit</h3>
+          <p>Technical SEO implementation review of metadata, canonical setup, internal links, Open Graph, sitemap, schema, and responsive design.</p>
+          <a class="button button--secondary" href="projects/seo-blog-audit.html">View Case Study</a>
         </article>
       </div>
     </section>
+
+    <section class="section section--alt">
+      <div class="section__header" data-reveal>
+        
+        <h2>Recent repositories</h2>
+        <p>Repository data is loaded on the client from the GitHub API and displayed here for quick access.</p>
+      </div>
+      <div class="grid grid--three" id="github-projects" aria-live="polite"></div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span data-year>2026</span> Jan Christopher Buen. Technical SEO portfolio for GitHub Pages.</p>
+  </footer>
+  <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>
+

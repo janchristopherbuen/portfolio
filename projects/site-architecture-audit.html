@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Architecture Audit - Books to Scrape Website | Jan Christopher Buen</title>
+  <meta name="description" content="Technical SEO analysis of the website's internal structure, crawl depth, and internal linking architecture.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://janchristopherbuen.github.io/portfolio/projects/site-architecture-audit.html">
+  <meta property="og:title" content="Site Architecture Audit - Books to Scrape Website">
+  <meta property="og:description" content="Technical SEO analysis of the website's internal structure, crawl depth, and internal linking architecture.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://janchristopherbuen.github.io/portfolio/projects/site-architecture-audit.html">
+  <meta property="og:image" content="https://janchristopherbuen.github.io/portfolio/assets/images/projects/site-architecture-audit-site-structure.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Site Architecture Audit - Books to Scrape Website">
+  <meta name="twitter:description" content="Technical SEO analysis of the website's internal structure, crawl depth, and internal linking architecture.">
+  <meta name="twitter:image" content="https://janchristopherbuen.github.io/portfolio/assets/images/projects/site-architecture-audit-site-structure.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#0f172a",
+            mist: "#e2e8f0",
+            panel: "#111827",
+            accent: "#34d399",
+            accentSoft: "#022c22",
+            warn: "#fbbf24",
+            danger: "#fb7185"
+          },
+          boxShadow: {
+            audit: "0 24px 50px rgba(15, 23, 42, 0.35)"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100">
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/90 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4" aria-label="Primary navigation">
+      <a href="../index.html" class="text-xl font-bold tracking-tight text-emerald-300">JC</a>
+            <div class="flex gap-6 text-sm text-slate-300">
+        <a href="../index.html" class="hover:text-white">Home</a>
+        <a href="../about.html" class="hover:text-white">About</a>
+        <a href="../projects.html" class="text-white">Projects</a>
+        <a href="../tools/index.html" class="hover:text-white">Tools</a>
+        <a href="../blog.html" class="hover:text-white">Blog</a>
+        <a href="../certificates.html" class="hover:text-white">Certificates</a>
+        <a href="../contact.html" class="hover:text-white">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="case-study-content">
+    <section class="border-b border-white/10 bg-gradient-to-br from-slate-900 via-slate-950 to-emerald-950/40">
+      <div class="mx-auto grid max-w-7xl gap-10 px-4 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+        <article>
+          <h1 class="text-4xl font-black tracking-tight text-white md:text-6xl">Site Architecture Audit - Books to Scrape Website</h1>
+          <p class="mt-5 max-w-3xl text-lg leading-8 text-slate-300">Technical SEO analysis of the website's internal structure, crawl depth, and internal linking architecture.</p>
+        </article>
+        <aside class="project-meta rounded-3xl border border-white/10 bg-white/5 p-8 shadow-audit">
+          <h2 class="text-lg font-semibold text-white">Project Metadata</h2>
+          <dl class="mt-6 space-y-4 text-sm text-slate-300">
+            <div>
+              <dt class="font-semibold text-white">Project Type</dt>
+              <dd>Technical SEO - Site Architecture Audit</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-white">Website Audited</dt>
+              <dd><a class="text-emerald-300 underline" href="https://books.toscrape.com" target="_blank" rel="noopener noreferrer">https://books.toscrape.com</a></dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-white">Audit Date</dt>
+              <dd>March 2026</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-white">Tools Used</dt>
+              <dd class="mt-2 space-y-1">
+                <div>Screaming Frog SEO Spider</div>
+                <div>Google Sheets</div>
+              </dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 py-16">
+      <article class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-audit">
+        <h2 class="text-3xl font-black text-white">Project Overview</h2>
+        <p class="mt-5 max-w-4xl text-base leading-8 text-slate-300">This audit evaluates how the website structure influences search engine crawling and content discovery.</p>
+        <div class="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          <div class="rounded-2xl border border-white/10 bg-slate-950/60 p-5 text-slate-300">site directory structure</div>
+          <div class="rounded-2xl border border-white/10 bg-slate-950/60 p-5 text-slate-300">internal linking hierarchy</div>
+          <div class="rounded-2xl border border-white/10 bg-slate-950/60 p-5 text-slate-300">crawl depth distribution</div>
+          <div class="rounded-2xl border border-white/10 bg-slate-950/60 p-5 text-slate-300">page accessibility</div>
+        </div>
+      </article>
+    </section>
+
+    <section class="border-y border-white/10 bg-slate-900/60">
+      <div class="mx-auto max-w-7xl px-4 py-16">
+        <article class="rounded-3xl border border-white/10 bg-slate-950/60 p-8 shadow-audit">
+          <h2 class="text-3xl font-black text-white">Tools Used</h2>
+          <div class="mt-8 overflow-x-auto">
+            <table class="min-w-full text-left text-sm text-slate-300">
+              <thead class="text-white">
+                <tr class="border-b border-white/10">
+                  <th class="pb-4 pr-6">Tool</th>
+                  <th class="pb-4">Purpose</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="py-4 pr-6">Screaming Frog SEO Spider</td><td class="py-4">Crawl the website and analyze site architecture</td></tr>
+                <tr><td class="py-4 pr-6">Google Sheets</td><td class="py-4">Document crawl results and analysis</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 py-16">
+      <article class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-audit">
+        <h2 class="text-3xl font-black text-white">Site Structure Overview</h2>
+        <div class="mt-8 grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
+          <figure class="overflow-hidden rounded-2xl border border-white/10 bg-slate-950/60 audit-image">
+            <img src="../assets/images/projects/site-architecture-audit-site-structure.png" alt="Screaming Frog site structure overview" width="507" height="367" loading="lazy" class="w-full rounded-lg">
+            <figcaption class="border-t border-white/10 px-5 py-4 text-sm text-slate-300">Directory-based crawl summary showing how URLs are grouped across the site.</figcaption>
+          </figure>
+          <div class="rounded-2xl border border-white/10 bg-slate-950/60 p-6">
+            <h3 class="text-xl font-semibold text-white">Directory Structure</h3>
+            <div class="mt-6 overflow-x-auto">
+              <table class="min-w-full text-left text-sm text-slate-300">
+                <thead class="text-white">
+                  <tr class="border-b border-white/10">
+                    <th class="pb-4 pr-6">Directory</th>
+                    <th class="pb-4">URLs</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-white/10">
+                  <tr><td class="py-4 pr-6">Root domain</td><td class="py-4">499</td></tr>
+                  <tr><td class="py-4 pr-6">/catalogue/</td><td class="py-4">275</td></tr>
+                  <tr><td class="py-4 pr-6">/media/</td><td class="py-4">215</td></tr>
+                  <tr><td class="py-4 pr-6">/static/</td><td class="py-4">7</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="mt-6 text-base leading-8 text-slate-300">The crawl identified a hierarchical structure organized into directories.</p>
+            <p class="mt-4 text-base leading-8 text-slate-300">The <code class="text-emerald-300">/catalogue/</code> directory contains most pages, indicating product listings are the main content.</p>
+            <p class="mt-4 text-base leading-8 text-slate-300">Category-based architecture helps search engines understand page relationships.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="border-y border-white/10 bg-slate-900/60">
+      <div class="mx-auto max-w-7xl px-4 py-16">
+        <article class="rounded-3xl border border-white/10 bg-slate-950/60 p-8 shadow-audit">
+          <h2 class="text-3xl font-black text-white">Crawl Tree Graph</h2>
+          <div class="mt-8 grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
+            <figure class="overflow-hidden rounded-2xl border border-white/10 bg-black/20 audit-image">
+              <img src="../assets/images/projects/site-architecture-audit-crawl-tree-graph.png" alt="Crawl tree graph showing homepage, category pages, and product pages" width="1600" height="860" loading="lazy" class="w-full rounded-lg">
+              <figcaption class="border-t border-white/10 px-5 py-4 text-sm text-slate-300">Crawl tree visualization of the internal linking hierarchy.</figcaption>
+            </figure>
+            <div class="space-y-6">
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+                <h3 class="text-xl font-semibold text-white">Structure Observed</h3>
+                <pre class="mt-4 overflow-x-auto rounded-xl bg-black/40 p-4 text-sm text-emerald-300"><code>Homepage
+→ Category pages
+→ Product pages</code></pre>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+                <p class="text-base leading-8 text-slate-300">Category pages act as internal linking hubs distributing authority to product pages.</p>
+                <p class="mt-4 text-base leading-8 text-slate-300">This structure improves crawl efficiency and helps search engines discover deeper pages.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 py-16">
+      <article class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-audit">
+        <h2 class="text-3xl font-black text-white">Crawl Depth Distribution</h2>
+        <div class="mt-8 grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
+          <figure class="overflow-hidden rounded-2xl border border-white/10 bg-slate-950/60 audit-image">
+            <img src="../assets/images/projects/site-architecture-audit-crawl-depth-distribution.png" alt="Crawl depth distribution chart from Screaming Frog" width="600" height="371" loading="lazy" class="w-full rounded-lg">
+            <figcaption class="border-t border-white/10 px-5 py-4 text-sm text-slate-300">Crawl depth distribution showing how many pages exist at each level.</figcaption>
+          </figure>
+          <div class="rounded-2xl border border-white/10 bg-slate-950/60 p-6">
+            <h3 class="text-xl font-semibold text-white">Crawl Depth Summary</h3>
+            <div class="mt-6 overflow-x-auto">
+              <table class="min-w-full text-left text-sm text-slate-300">
+                <thead class="text-white">
+                  <tr class="border-b border-white/10">
+                    <th class="pb-4 pr-6">Crawl Depth</th>
+                    <th class="pb-4">Pages</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-white/10">
+                  <tr><td class="py-4 pr-6">Level 0</td><td class="py-4">1</td></tr>
+                  <tr><td class="py-4 pr-6">Level 1</td><td class="py-4">100</td></tr>
+                  <tr><td class="py-4 pr-6">Level 2</td><td class="py-4">398</td></tr>
+                  <tr><td class="py-4 pr-6">Level 3</td><td class="py-4">0</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="mt-6 text-base leading-8 text-slate-300">Most pages exist within crawl depth level 2.</p>
+            <p class="mt-4 text-base leading-8 text-slate-300">Important pages should remain within three clicks from the homepage.</p>
+            <p class="mt-4 text-base leading-8 text-slate-300">The website meets this guideline.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="border-y border-white/10 bg-slate-900/60">
+      <div class="mx-auto max-w-7xl px-4 py-16">
+        <article class="rounded-3xl border border-white/10 bg-slate-950/60 p-8 shadow-audit">
+          <h2 class="text-3xl font-black text-white">Internal Linking Observations</h2>
+          <div class="grid gap-6 lg:grid-cols-2">
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <h3 class="text-xl font-semibold text-white">Internal Linking Flow</h3>
+              <pre class="mt-4 overflow-x-auto rounded-xl bg-black/40 p-4 text-sm text-emerald-300"><code>Category pages → Product pages</code></pre>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <h3 class="text-xl font-semibold text-white">Benefits</h3>
+              <ul class="mt-4 space-y-3 text-slate-300">
+                <li>efficient distribution of link equity</li>
+                <li>improved crawl efficiency</li>
+                <li>logical content organization</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-6 rounded-2xl border border-amber-400/20 bg-amber-400/10 p-6">
+            <p class="text-base leading-8 text-white">Some deeper product pages may receive fewer internal links.</p>
+            <p class="mt-4 text-base leading-8 text-slate-200">Strengthening links to important pages can improve discoverability.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 py-16">
+      <article class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-audit">
+        <h2 class="text-3xl font-black text-white">SEO Recommendations</h2>
+        <ol class="mt-8 space-y-4 text-base leading-8 text-slate-300">
+          <li>1. Maintain current hierarchical structure.</li>
+          <li>2. Ensure important pages remain within three clicks from homepage.</li>
+          <li>3. Strengthen internal linking to deeper pages where needed.</li>
+          <li>4. Monitor crawl depth during future site growth.</li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="border-y border-white/10 bg-slate-900/60">
+      <div class="mx-auto max-w-7xl px-4 py-16">
+        <article class="rounded-3xl border border-white/10 bg-slate-950/60 p-8 shadow-audit">
+          <h2 class="text-3xl font-black text-white">Technical SEO Summary</h2>
+          <div class="mt-8 overflow-x-auto">
+            <table class="min-w-full text-left text-sm text-slate-300">
+              <thead class="text-white">
+                <tr class="border-b border-white/10">
+                  <th class="pb-4 pr-6">SEO Area</th>
+                  <th class="pb-4">Status</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="py-4 pr-6">Site architecture</td><td class="py-4">Good</td></tr>
+                <tr><td class="py-4 pr-6">Crawl depth</td><td class="py-4">Efficient</td></tr>
+                <tr><td class="py-4 pr-6">Internal linking</td><td class="py-4">Structured</td></tr>
+                <tr><td class="py-4 pr-6">Crawl accessibility</td><td class="py-4">Good</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 py-16">
+      <article class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-audit">
+        <h2 class="text-3xl font-black text-white">Conclusion</h2>
+        <p class="mt-5 text-base leading-8 text-slate-300">The website demonstrates a well-organized hierarchical architecture.</p>
+        <p class="mt-4 text-base leading-8 text-slate-300">Most pages are reachable within two crawl levels from the homepage.</p>
+        <p class="mt-4 text-base leading-8 text-slate-300">This structure supports efficient crawling and indexation.</p>
+      </article>
+    </section>
+
+    <section class="border-t border-white/10 bg-slate-900/60">
+      <div class="mx-auto max-w-7xl px-4 py-16">
+        <article class="rounded-3xl border border-white/10 bg-slate-950/60 p-8 shadow-audit">
+          <h2 class="text-3xl font-black text-white">Related Projects</h2>
+          <div class="mt-8 grid gap-5 md:grid-cols-3">
+            <a class="rounded-2xl border border-white/10 bg-white/5 p-6 text-slate-200 transition hover:border-emerald-300/40 hover:bg-white/10" href="./indexability-audit.html">Indexability Audit</a>
+            <a class="rounded-2xl border border-white/10 bg-white/5 p-6 text-slate-200 transition hover:border-emerald-300/40 hover:bg-white/10" href="./books-to-scrape-technical-seo-audit.html">Books to Scrape Technical SEO Audit</a>
+            <a class="rounded-2xl border border-white/10 bg-white/5 p-6 text-slate-200 transition hover:border-emerald-300/40 hover:bg-white/10" href="./technical-seo-audit.html">Portfolio Technical SEO Audit</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+

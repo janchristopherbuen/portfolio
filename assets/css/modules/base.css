@@ -1,48 +1,163 @@
-/* base.css: global variables, reset, and accessibility */
-
 :root{
-    --bg-main:#0f172a;
-    --bg-dark:#020617;
-
-    --text-main:#f1f5f9;
-
-    --accent:#38bdf8;
-    --accent-hover:#0ea5e9;
-
-    --shadow-soft:0 6px 20px rgba(0,0,0,0.35);
-    --shadow-hover:0 14px 35px rgba(0,0,0,0.45);
-
-    --radius:12px;
+  --bg:#0b1020;
+  --bg-elevated:#111936;
+  --bg-soft:#161f41;
+  --surface:#eef3ff;
+  --surface-soft:#d7e4ff;
+  --text:#e8eefc;
+  --text-muted:#b2bfd9;
+  --text-dark:#091225;
+  --line:rgba(255,255,255,.09);
+  --accent:#87f4c1;
+  --accent-strong:#5dd9a2;
+  --accent-contrast:#05281a;
+  --highlight:#7fb4ff;
+  --shadow:0 22px 55px rgba(3,8,20,.35);
+  --radius:22px;
+  --radius-sm:14px;
+  --max:1180px;
+  --text-xs:0.8rem;
+  --text-sm:0.9rem;
+  --text-base:1rem;
+  --text-md:1.1rem;
+  --text-lg:1.3rem;
+  --text-xl:1.6rem;
+  --text-2xl:2rem;
 }
 
-/* GLOBAL RESET */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+*,
+*::before,
+*::after{
+  box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+  scroll-behavior:smooth;
 }
 
 body{
-    font-family:'Poppins',sans-serif;
-    background:var(--bg-main);
-    color:var(--text-main);
-    line-height:1.6;
+  margin:0;
+  font-family:"Manrope",sans-serif;
+  font-size:var(--text-base);
+  line-height:1.6;
+  color:var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(127,180,255,.18), transparent 35%),
+    radial-gradient(circle at top right, rgba(135,244,193,.12), transparent 28%),
+    linear-gradient(180deg, #09101f 0%, #0b1020 60%, #101733 100%);
+  min-height:100vh;
 }
 
-/* IMAGES */
 img{
-    max-width:100%;
-    height:auto;
-    display:block;
+  display:block;
+  max-width:100%;
+  height:auto;
 }
 
-/* ACCESSIBILITY */
-a:focus-visible,
-button:focus-visible{
-    outline:2px solid var(--accent);
-    outline-offset:3px;
+a{
+  color:inherit;
+}
+
+button,
+input,
+select,
+textarea{
+  font:inherit;
+}
+
+code,
+pre{
+  font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+  font-size:var(--text-sm);
+}
+
+h1,
+h2,
+h3{
+  font-family:"Space Grotesk",sans-serif;
+  line-height:1.08;
+  letter-spacing:-.03em;
+  margin:0 0 .7rem;
+}
+
+h1{
+  font-size:var(--text-2xl);
+  font-weight:700;
+}
+
+h2{
+  font-size:var(--text-xl);
+  margin-bottom:16px;
+}
+
+h3{
+  font-size:var(--text-lg);
+  margin-bottom:10px;
+}
+
+p{
+  margin:0 0 1rem;
+  font-size:var(--text-base);
+  line-height:1.6;
+  color:var(--text-muted);
+}
+
+ul,
+ol{
+  margin:0;
+  padding-left:1.2rem;
+}
+
+::selection{
+  background:var(--accent);
+  color:var(--accent-contrast);
+}
+
+:focus-visible{
+  outline:3px solid var(--accent);
+  outline-offset:4px;
+}
+
+.skip-link{
+  position:absolute;
+  left:1rem;
+  top:-3rem;
+  z-index:1000;
+  background:var(--accent);
+  color:var(--accent-contrast);
+  padding:.75rem 1rem;
+  border-radius:999px;
+  text-decoration:none;
+}
+
+.skip-link:focus{
+  top:1rem;
+}
+
+.visually-hidden{
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+  white-space:nowrap;
+  border:0;
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *,
+  *::before,
+  *::after{
+    animation:none !important;
+    transition:none !important;
+  }
+}
+
+@media (max-width:768px){
+  h1{font-size:1.6rem;}
+  h2{font-size:1.4rem;}
+  h3{font-size:1.2rem;}
 }

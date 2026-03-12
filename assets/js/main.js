@@ -1,18 +1,14 @@
-// main.js - entry point that initializes components on every page
+import { initNavigation, initReveal, initYear } from "./core.js";
+import { loadGitHubRepos } from "./github.js";
+import { initMetaAnalyzer, initRobotsValidator, initSchemaGenerator, initSitemapValidator } from "./tools.js";
 
-import { initMobileMenu, initScrollReveal, initScrollProgress } from './core.js';
-import { loadGitHubRepos } from './github.js';
-import { initMetaAnalyzer, initRobotsValidator, initSchemaGenerator, initSitemapValidator } from './tools.js';
-
-document.addEventListener('DOMContentLoaded', () => {
-    initMobileMenu();
-    initScrollReveal();
-    initScrollProgress();
-    // Projects page GitHub integration
-    loadGitHubRepos('github-projects');
-    // Tools initialization
-    initMetaAnalyzer();
-    initRobotsValidator();
-    initSchemaGenerator();
-    initSitemapValidator();
+document.addEventListener("DOMContentLoaded", () => {
+  initNavigation();
+  initReveal();
+  initYear();
+  loadGitHubRepos("github-projects");
+  initMetaAnalyzer();
+  initRobotsValidator();
+  initSchemaGenerator();
+  initSitemapValidator();
 });

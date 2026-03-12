@@ -1,57 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Schema Markup Generator</title>
-<meta name="description" content="Generate basic JSON-LD schema markup for Person, WebSite, or Project.">
-<link rel="canonical" href="https://janchristopherbuen.github.io/portfolio/tools/schema-generator.html">
-<!-- Open Graph -->
-<meta property="og:title" content="Schema Markup Generator">
-<meta property="og:description" content="Generate basic JSON-LD schema markup for Person, WebSite, or Project.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://janchristopherbuen.github.io/portfolio/tools/schema-generator.html">
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Schema Markup Generator">
-<meta name="twitter:description" content="Generate basic JSON-LD schema markup for Person, WebSite, or Project.">
-<link rel="stylesheet" href="../assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schema Markup Generator | Jan Christopher Buen</title>
+  <meta name="description" content="Generate starter JSON-LD for Person, WebSite, and Project schema types.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://janchristopherbuen.github.io/portfolio/tools/schema-generator.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap">
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-<header>
-<nav class="navbar" aria-label="Primary navigation">
-    <div class="logo"><a href="../index.html">JC</a></div>
-    <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../pages/about.html">About</a></li>
-        <li><a href="../pages/projects.html">Projects</a></li>
-        <li><a href="../pages/blog.html">Blog</a></li>
-        <li><a href="index.html" class="active">Tools</a></li>
-        <li><a href="../pages/contact.html">Contact</a></li>
-    </ul>
-</nav>
-</header>
-<main>
-<section>
-    <h1 class="section-title">Schema Markup Generator</h1>
-    <form id="schema-form">
-        <label for="schema-type">Type</label>
-        <select id="schema-type">
-            <option>Person</option>
-            <option>WebSite</option>
-            <option>Project</option>
-        </select>
-        <label for="schema-name">Name</label>
-        <input id="schema-name" type="text" placeholder="e.g. Jan Christopher Buen">
-        <label for="schema-url">URL</label>
-        <input id="schema-url" type="url" placeholder="https://example.com">
-        <button type="submit" class="btn">Generate</button>
-    </form>
-    <pre id="schema-output" aria-live="polite"></pre>
-</section>
-</main>
-<footer>
-<p>© 2026 Jan Christopher Buen</p>
-</footer>
-<script type="module" src="../assets/js/main.js"></script>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header"><div class="nav-shell"><a class="brand" href="../index.html" aria-label="Jan Christopher Buen home">JC</a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span><span></span></button><nav class="site-nav" id="site-nav" aria-label="Primary"><a href="../index.html" data-nav="index.html">Home</a><a href="../about.html" data-nav="about.html">About</a><a href="../projects.html" data-nav="projects.html">Projects</a><a href="../tools/index.html" data-nav="tools/index.html">Tools</a><a href="../blog.html" data-nav="blog.html">Blog</a><a href="../certificates.html" data-nav="certificates.html">Certificates</a><a href="../contact.html" data-nav="contact.html">Contact</a></nav></div></header>
+  <main id="main-content">
+    <section class="hero"><div class="hero__content hero__content--narrow" data-reveal><h1>Schema Markup Generator</h1><p class="lead">Create starter JSON-LD markup for common portfolio and SEO use cases.</p></div></section>
+    <section class="section">
+      <div class="card" data-reveal>
+        <form class="tool-form" id="schema-form">
+          <label for="schema-type">Schema type</label>
+          <select id="schema-type"><option>Person</option><option>WebSite</option><option>Project</option></select>
+          <label for="schema-name">Name</label>
+          <input id="schema-name" type="text" placeholder="Project or person name">
+          <label for="schema-url">URL</label>
+          <input id="schema-url" type="url" placeholder="https://example.com">
+          <label for="schema-description">Description</label>
+          <textarea id="schema-description" placeholder="Describe the entity"></textarea>
+          <button class="button button--primary" type="submit">Generate schema</button>
+        </form>
+      </div>
+      <pre class="tool-output" id="schema-output" aria-live="polite" data-reveal></pre>
+    </section>
+  </main>
+  <footer class="site-footer"><p>&copy; <span data-year>2026</span> Jan Christopher Buen.</p></footer>
+  <script type="module" src="../assets/js/main.js"></script>
 </body>
 </html>
+
