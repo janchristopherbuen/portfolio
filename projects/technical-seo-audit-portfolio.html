@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical SEO Audit: Personal Portfolio Website Case Study | Jan Christopher Buen</title>
+    <meta name="description" content="Technical SEO audit case study of a personal portfolio website hosted on GitHub Pages. Complete analysis of performance, crawlability, indexability, and technical SEO implementation.">
+    <meta name="keywords" content="technical SEO audit, portfolio website, GitHub Pages, Core Web Vitals, Lighthouse, semantic markup, structured data">
+    <meta name="author" content="Jan Christopher Buen">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://janchristopherbuen.github.io/portfolio/projects/technical-seo-audit-portfolio.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Technical SEO Audit: Personal Portfolio Website">
+    <meta property="og:description" content="Complete technical SEO audit and implementation report for a GitHub Pages portfolio website.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://janchristopherbuen.github.io/portfolio/projects/technical-seo-audit-portfolio.html">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Technical SEO Audit: Personal Portfolio Website",
+        "description": "Comprehensive technical SEO audit and implementation report covering performance, crawlability, indexability, metadata, structured data, and internal linking.",
+        "author": {
+            "@type": "Person",
+            "name": "Jan Christopher Buen",
+            "url": "https://janchristopherbuen.github.io/portfolio/"
+        },
+        "datePublished": "2024-03-01",
+        "dateModified": "2024-03-01"
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1f2937',
+                        secondary: '#3b82f6',
+                        accent: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-2xl font-bold text-primary hover:text-secondary transition-colors">JC</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="text-gray-700 hover:text-secondary transition-colors">Home</a>
+                    <a href="../about.html" class="text-gray-700 hover:text-secondary transition-colors">About</a>
+                    <a href="../projects.html" class="text-secondary font-medium">Projects</a>
+                    <a href="../blog.html" class="text-gray-700 hover:text-secondary transition-colors">Blog</a>
+                    <a href="../tools/index.html" class="text-gray-700 hover:text-secondary transition-colors">Tools</a>
+                    <a href="../contact.html" class="text-gray-700 hover:text-secondary transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-primary to-secondary text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Technical SEO Audit: Personal Portfolio Website</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">Comprehensive Analysis of Performance, Crawlability, and Technical SEO Implementation</p>
+            <div class="flex flex-wrap justify-center gap-4 text-sm">
+                <span class="bg-white/20 px-3 py-1 rounded-full">GitHub Pages</span>
+                <span class="bg-white/20 px-3 py-1 rounded-full">Technical SEO</span>
+                <span class="bg-white/20 px-3 py-1 rounded-full">Lighthouse 90+</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Overview Section -->
+        <section class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">1. Overview</h2>
+                <div class="space-y-4">
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <p class="font-semibold text-gray-900">Website:</p>
+                        <p class="text-gray-700"><a href="https://janchristopherbuen.github.io/portfolio/" class="text-secondary hover:underline">https://janchristopherbuen.github.io/portfolio/</a></p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <p class="font-semibold text-gray-900">Audit Type:</p>
+                        <p class="text-gray-700">Technical SEO Audit</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <p class="font-semibold text-gray-900">Platform:</p>
+                        <p class="text-gray-700">GitHub Pages (Static Website)</p>
+                    </div>
+                </div>
+                <p class="text-gray-700 leading-relaxed mt-8 mb-4">This audit evaluates the technical SEO configuration of a personal portfolio website developed to showcase technical SEO and web development projects.</p>
+                <p class="text-gray-700 leading-relaxed mb-4">The objective of this audit is to analyze technical elements that influence search engine crawling, indexing, and ranking performance.</p>
+                <h3 class="text-xl font-semibold text-primary mb-4 mt-6">The audit examines:</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Website performance and Core Web Vitals</li>
+                    <li>Crawlability and indexability</li>
+                    <li>HTML metadata</li>
+                    <li>Heading hierarchy</li>
+                    <li>Image SEO</li>
+                    <li>Internal linking</li>
+                    <li>Structured data implementation</li>
+                    <li>robots.txt configuration</li>
+                    <li>XML sitemap structure</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Audit Methodology -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">2. Audit Methodology</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">The website was evaluated using a structured technical SEO process combining automated diagnostic tools and manual source code inspection.</p>
+                
+                <h3 class="text-xl font-semibold text-primary mb-4">Tools Used</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full border border-gray-300">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th class="p-3 text-left">Tool</th>
+                                <th class="p-3 text-left">Purpose</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Chrome Lighthouse</td>
+                                <td class="p-3">Performance and technical diagnostics</td>
+                            </tr>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">PageSpeed Insights</td>
+                                <td class="p-3">Core Web Vitals testing</td>
+                            </tr>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Google Search Operator</td>
+                                <td class="p-3">Indexability verification</td>
+                            </tr>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Schema Validator</td>
+                                <td class="p-3">Structured data validation</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3">Manual HTML Inspection</td>
+                                <td class="p-3">Metadata and markup analysis</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Performance Audit -->
+        <section class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">2.1 Performance Audit</h2>
+                
+                <h3 class="text-xl font-semibold text-primary mb-4">Screenshot</h3>
+                <div class="mb-6">
+                    <img src="../assets/images/baseline-technical-test.png" alt="Lighthouse Performance Audit" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Results</h3>
+                <div class="overflow-x-auto mb-6">
+                    <table class="w-full border border-gray-300">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th class="p-3 text-left">Category</th>
+                                <th class="p-3 text-left">Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Performance</td>
+                                <td class="p-3 font-semibold">90</td>
+                            </tr>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Accessibility</td>
+                                <td class="p-3 font-semibold">95</td>
+                            </tr>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Best Practices</td>
+                                <td class="p-3 font-semibold">96</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3">SEO</td>
+                                <td class="p-3 font-semibold">100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Analysis</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">The Lighthouse audit shows strong technical performance. The high scores indicate:</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+                    <li>Lightweight static architecture</li>
+                    <li>Minimal JavaScript overhead</li>
+                    <li>Optimized CSS delivery</li>
+                    <li>Efficient resource loading</li>
+                </ul>
+                <p class="text-gray-700 leading-relaxed">Because the site is hosted on <strong>GitHub Pages</strong>, it benefits from fast server response times and simplified rendering.</p>
+            </div>
+        </section>
+
+        <!-- Core Web Vitals -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">2.2 Core Web Vitals Analysis</h2>
+                
+                <h3 class="text-xl font-semibold text-primary mb-4">Screenshot</h3>
+                <div class="mb-6">
+                    <img src="../assets/images/test-coreweb-vitals.png" alt="Core Web Vitals Test" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Metrics</h3>
+                <div class="overflow-x-auto mb-6">
+                    <table class="w-full border border-gray-300">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th class="p-3 text-left">Metric</th>
+                                <th class="p-3 text-left">Result</th>
+                                <th class="p-3 text-left">Target</th>
+                                <th class="p-3 text-left">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">First Contentful Paint</td>
+                                <td class="p-3">2.4s</td>
+                                <td class="p-3">&lt;2.5s</td>
+                                <td class="p-3"><span class="text-accent font-semibold">Pass</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Largest Contentful Paint</td>
+                                <td class="p-3">2.8s</td>
+                                <td class="p-3">&lt;2.5s</td>
+                                <td class="p-3"><span class="text-yellow-600 font-semibold">Needs Improvement</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Total Blocking Time</td>
+                                <td class="p-3">0ms</td>
+                                <td class="p-3">&lt;200ms</td>
+                                <td class="p-3"><span class="text-accent font-semibold">Excellent</span></td>
+                            </tr>
+                            <tr>
+                                <td class="p-3">Cumulative Layout Shift</td>
+                                <td class="p-3">0</td>
+                                <td class="p-3">&lt;0.1</td>
+                                <td class="p-3"><span class="text-accent font-semibold">Excellent</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Analysis</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">Largest Contentful Paint slightly exceeds Google's recommended threshold.</p>
+                <p class="text-gray-700 leading-relaxed mb-4">The likely cause is the <strong>hero image loading above the fold</strong>.</p>
+                
+                <h3 class="text-xl font-semibold text-primary mb-4">Recommendation</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Compress hero image</li>
+                    <li>Convert images to WebP format</li>
+                    <li>Optimize image delivery</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Indexability Verification -->
+        <section class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">2.3 Indexability Verification</h2>
+                
+                <h3 class="text-xl font-semibold text-primary mb-4">Screenshot</h3>
+                <div class="mb-6">
+                    <img src="../assets/images/google-search-query.png" alt="HTML Head Metadata Inspection" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Test Method</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">Google search operator used:</p>
+                <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6"><code>site:janchristopherbuen.github.io</code></pre>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Analysis</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">Manual inspection of the HTML <code class="bg-gray-200 px-2 py-1 rounded">&lt;head&gt;</code> section confirmed that no <code class="bg-gray-200 px-2 py-1 rounded">noindex</code> directive is present.</p>
+                <p class="text-gray-700 leading-relaxed mb-4">Example metadata found:</p>
+                <div class="mb-6">
+                    <img src="../assets/images/check-robots-meta-tag.png" alt="HTML Head Metadata Inspection" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Conclusion</h3>
+                <p class="text-gray-700 leading-relaxed">The absence of <code class="bg-gray-200 px-2 py-1 rounded">noindex</code> directives confirms that the page is <strong>eligible for indexing by search engines</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Metadata Inspection -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">2.4 Metadata Inspection</h2>
+                
+                <h3 class="text-xl font-semibold text-primary mb-4">Screenshot</h3>
+                <div class="mb-6">
+                    <img src="../assets/images/title-tag.png" alt="HTML Metadata" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Title Tag</h3>
+                <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6"><code>Jan Christopher Buen | Technical SEO Portfolio</code></pre>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Meta Description</h3>
+                <div class="mb-6">
+                    <img src="../assets/images/metadata.png" alt="HTML Metadata" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Analysis</h3>
+                <div class="overflow-x-auto mb-6">
+                    <table class="w-full border border-gray-300">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th class="p-3 text-left">Element</th>
+                                <th class="p-3 text-left">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Title tag</td>
+                                <td class="p-3"><span class="text-accent font-semibold">Optimized</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Meta description</td>
+                                <td class="p-3"><span class="text-yellow-600 font-semibold">Slightly long</span></td>
+                            </tr>
+                            <tr>
+                                <td class="p-3">Keyword targeting</td>
+                                <td class="p-3"><span class="text-accent font-semibold">Present</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Recommendation</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">Shorten the description to approximately <strong>150–160 characters</strong>.</p>
+                <p class="text-gray-700 leading-relaxed mb-4">Example optimized description:</p>
+                <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto"><code>Technical SEO portfolio showcasing SEO audits, crawl diagnostics, structured data implementation, and website optimization projects.</code></pre>
+            </div>
+        </section>
+
+        <!-- Heading Structure -->
+        <section class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">2.5 Heading Structure Analysis</h2>
+                
+                <h3 class="text-xl font-semibold text-primary mb-4">Screenshot</h3>
+                <div class="mb-6">
+                    <img src="../assets/images/h1.png" alt="Heading Structure" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Current Structure</h3>
+                <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6"><code>H1: Hello, I'm JC
+H2: About Me
+H2: Skills
+H2: Projects</code></pre>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Analysis</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">The H1 heading does not contain the primary keyword <strong>Technical SEO</strong>, which weakens topical relevance.</p>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Recommended H1</h3>
+                <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6"><code>Technical SEO Specialist Portfolio – Jan Christopher Buen</code></pre>
+
+                <p class="text-gray-700 leading-relaxed">This improves:</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>topic clarity</li>
+                    <li>keyword targeting</li>
+                    <li>search relevance signals</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Image SEO -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">2.6 Image SEO Analysis</h2>
+                
+                <h3 class="text-xl font-semibold text-primary mb-4">Screenshot</h3>
+                <div class="mb-6">
+                    <img src="../assets/images/image-seo.png" alt="Image Element Inspection" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Code Example</h3>
+                <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6"><code>&lt;img src="images/profile.png"
+alt="Portrait of Jan Christopher Buen"
+loading="lazy"
+width="400"
+height="400"&gt;</code></pre>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Analysis</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">The image element follows several SEO and performance best practices.</p>
+                <div class="overflow-x-auto mb-6">
+                    <table class="w-full border border-gray-300">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th class="p-3 text-left">Factor</th>
+                                <th class="p-3 text-left">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Alt attribute present</td>
+                                <td class="p-3"><span class="text-accent font-semibold">Yes</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Lazy loading enabled</td>
+                                <td class="p-3"><span class="text-accent font-semibold">Yes</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Width and height defined</td>
+                                <td class="p-3"><span class="text-accent font-semibold">Yes</span></td>
+                            </tr>
+                            <tr>
+                                <td class="p-3">Layout shift prevention</td>
+                                <td class="p-3"><span class="text-accent font-semibold">Yes</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Optimization Opportunity</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">Current filename:</p>
+                <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-4"><code>profile.png</code></pre>
+
+                <p class="text-gray-700 leading-relaxed mb-4">Recommended filename:</p>
+                <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-4"><code>jan-christopher-buen-technical-seo-specialist.webp</code></pre>
+
+                <p class="text-gray-700 leading-relaxed">This provides stronger relevance signals for image search.</p>
+            </div>
+        </section>
+
+        <!-- Internal Linking -->
+        <section class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">2.7 Internal Linking Analysis</h2>
+                
+                <h3 class="text-xl font-semibold text-primary mb-4">Screenshot</h3>
+                <div class="mb-6">
+                    <img src="../assets/images/evaluate-internal-link.png" alt="Internal Linking Structure" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Example Links</h3>
+                <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6"><code>View Project
+View Report</code></pre>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Analysis</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">The anchor text used for project links is generic and does not provide contextual relevance.</p>
+                <p class="text-gray-700 leading-relaxed mb-4">Search engines rely on anchor text to understand the content of linked pages.</p>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Recommended Anchor Text</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">Examples:</p>
+                <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto"><code>SEO Blog Optimization Case Study
+Indexability Audit Report
+Technical SEO Site Architecture Audit</code></pre>
+            </div>
+        </section>
+
+        <!-- Structured Data -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">2.8 Structured Data Validation</h2>
+                
+                <h3 class="text-xl font-semibold text-primary mb-4">Screenshot</h3>
+                <div class="mb-6">
+                    <img src="../assets/images/check-structured-data.png" alt="Schema Validation" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Schema Type Implemented</h3>
+                <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6"><code>Person</code></pre>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Validation Result</h3>
+                <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6"><code>0 Errors
+0 Warnings</code></pre>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Example Schema</h3>
+                <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6"><code>{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "Jan Christopher Buen",
+ "jobTitle": "Entry-Level Technical SEO Specialist",
+ "url": "https://janchristopherbuen.github.io/portfolio/"
+}</code></pre>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Analysis</h3>
+                <p class="text-gray-700 leading-relaxed">The structured data successfully defines the entity associated with the portfolio website and improves search engine understanding of the website owner.</p>
+            </div>
+        </section>
+
+        <!-- robots.txt -->
+        <section class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">2.9 Robots.txt Analysis</h2>
+                
+                <h3 class="text-xl font-semibold text-primary mb-4">Screenshot</h3>
+                <div class="mb-6">
+                    <img src="../assets/images/robot.txt" alt="Robots Configuration" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">robots.txt</h3>
+                <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6"><code>User-agent: *
+Allow: /
+
+Sitemap: https://janchristopherbuen.github.io/portfolio/sitemap.xml</code></pre>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Analysis</h3>
+                <p class="text-gray-700 leading-relaxed">The robots file correctly:</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+                    <li>allows search engine crawling</li>
+                    <li>references the XML sitemap</li>
+                </ul>
+                <p class="text-gray-700 leading-relaxed">No crawl restrictions were detected.</p>
+            </div>
+        </section>
+
+        <!-- XML Sitemap -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">2.10 XML Sitemap Review</h2>
+                
+                <h3 class="text-xl font-semibold text-primary mb-4">Screenshot</h3>
+                <div class="mb-6">
+                    <img src="../assets/images/sitemap.xml" alt="XML Sitemap" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Sitemap Entries</h3>
+                <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6"><code>/portfolio/
+/portfolio/certificates.html</code></pre>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Analysis</h3>
+                <p class="text-gray-700 leading-relaxed">The sitemap provides search engines with a list of indexable URLs, improving crawl efficiency and content discovery.</p>
+            </div>
+        </section>
+
+        <!-- Issues Identified -->
+        <section class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">3. Issues Identified</h2>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full border border-gray-300">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th class="p-3 text-left">Issue</th>
+                                <th class="p-3 text-left">Impact</th>
+                                <th class="p-3 text-left">Severity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">H1 missing keyword</td>
+                                <td class="p-3">Weak topical relevance</td>
+                                <td class="p-3"><span class="text-yellow-600 font-semibold">Medium</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Generic anchor text</td>
+                                <td class="p-3">Weak internal linking signals</td>
+                                <td class="p-3"><span class="text-yellow-600 font-semibold">Medium</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Largest Contentful Paint slightly slow</td>
+                                <td class="p-3">Slower above-the-fold content load</td>
+                                <td class="p-3"><span class="text-blue-600 font-semibold">Low</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Meta description length</td>
+                                <td class="p-3">Possible SERP truncation</td>
+                                <td class="p-3"><span class="text-blue-600 font-semibold">Low</span></td>
+                            </tr>
+                            <tr>
+                                <td class="p-3">Image filename generic</td>
+                                <td class="p-3">Weak image SEO signals</td>
+                                <td class="p-3"><span class="text-blue-600 font-semibold">Low</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audit Summary -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">Audit Summary</h2>
+                
+                <div class="overflow-x-auto mb-8">
+                    <table class="w-full border border-gray-300">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th class="p-3 text-left">Category</th>
+                                <th class="p-3 text-left">Result</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Performance</td>
+                                <td class="p-3"><span class="text-accent font-semibold">Excellent</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Technical SEO</td>
+                                <td class="p-3"><span class="text-accent font-semibold">Strong</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">On-Page SEO</td>
+                                <td class="p-3"><span class="text-accent font-semibold">Good</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Structured Data</td>
+                                <td class="p-3"><span class="text-accent font-semibold">Excellent</span></td>
+                            </tr>
+                            <tr>
+                                <td class="p-3">Crawl Configuration</td>
+                                <td class="p-3"><span class="text-accent font-semibold">Correct</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-primary mb-2">Overall Technical SEO Score</h3>
+                    <p class="text-3xl font-bold text-secondary">89 / 100</p>
+                    <p class="text-gray-700 mt-4">The website demonstrates strong technical foundations with minor opportunities for improvement related primarily to semantic markup and internal linking signals.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fix Implementation -->
+        <section class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">4. Fix Implementation</h2>
+                <p class="text-gray-700 leading-relaxed">Based on the issues identified during the audit, several optimizations were implemented to improve technical SEO signals, semantic clarity, and performance.</p>
+            </div>
+        </section>
+
+        <!-- H1 Optimization -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">4.1 H1 Heading Optimization</h2>
+                
+                <h3 class="text-xl font-semibold text-primary mb-4">Issue</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">The original H1 heading did not contain the primary keyword and did not clearly describe the page topic.</p>
+                
+                <p class="text-gray-700 leading-relaxed mb-4">Original heading:</p>
+                <div class="mb-6">
+                    <img src="../assets/images/h1.png" alt="Heading Structure" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Implementation</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">The heading was updated to include the primary keyword <strong>Technical SEO Portfolio</strong> and the website owner's name.</p>
+                
+                <p class="text-gray-700 leading-relaxed mb-4">Updated heading:</p>
+                <div class="mb-6">
+                    <img src="../assets/images/h1-implemented.png" alt="Heading Structure" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Result</h3>
+                <p class="text-gray-700 leading-relaxed">This improvement strengthens:</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>keyword relevance</li>
+                    <li>topical clarity</li>
+                    <li>search engine understanding of the page topic</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Meta Description Optimization -->
+        <section class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">4.2 Meta Description Optimization</h2>
+                
+                <h3 class="text-xl font-semibold text-primary mb-4">Issue</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">The original meta description exceeded the recommended length of 160 characters, which could lead to truncation in search results.</p>
+                
+                <p class="text-gray-700 leading-relaxed mb-4">Original description:</p>
+                <div class="mb-6">
+                    <img src="../assets/images/metadata.png" alt="HTML Metadata" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Implementation</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">The meta description was shortened and refined to emphasize the core focus of the portfolio.</p>
+                
+                <p class="text-gray-700 leading-relaxed mb-4">Updated description:</p>
+                <div class="mb-6">
+                    <img src="../assets/images/metadata-implemented.png" alt="HTML Metadata" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Result</h3>
+                <p class="text-gray-700 leading-relaxed">This change improves:</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>search result readability</li>
+                    <li>click-through rate potential</li>
+                    <li>keyword targeting</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Anchor Text Optimization -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">4.3 Anchor Text Optimization</h2>
+                
+                <h3 class="text-xl font-semibold text-primary mb-4">Issue</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">Project links originally used generic anchor text such as "View Project" or "View Report".</p>
+                
+                <p class="text-gray-700 leading-relaxed mb-4">Example:</p>
+                <div class="mb-6">
+                    <img src="../assets/images/evaluate-internal-link.png" alt="Internal Linking Structure" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Implementation</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">Anchor text was updated to provide descriptive context about the linked content.</p>
+                
+                <p class="text-gray-700 leading-relaxed mb-4">Updated example:</p>
+                <div class="mb-6">
+                    <img src="../assets/images/implemented-internal-link.png" alt="Internal Linking Structure" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Result</h3>
+                <p class="text-gray-700 leading-relaxed">Improved anchor text provides:</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>stronger contextual signals</li>
+                    <li>better internal linking relevance</li>
+                    <li>improved content discoverability</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Image SEO Optimization -->
+        <section class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">4.4 Image SEO Optimization</h2>
+                
+                <h3 class="text-xl font-semibold text-primary mb-4">Issue</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">The original image filename was generic.</p>
+                
+                <p class="text-gray-700 leading-relaxed mb-4">Original filename:</p>
+                <div class="mb-6">
+                    <img src="../assets/images/image-seo.png" alt="Image Element Inspection" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Implementation</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">The image filename was updated to include descriptive keywords.</p>
+                
+                <p class="text-gray-700 leading-relaxed mb-4">Updated filename:</p>
+                <div class="mb-6">
+                    <img src="../assets/images/implemented-image-seo.png" alt="Image Element Inspection" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <p class="text-gray-700 leading-relaxed mb-4">Optimized profile image using WebP format, descriptive filename, and keyword-focused alt text to improve SEO, accessibility, and page performance.</p>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Result</h3>
+                <p class="text-gray-700 leading-relaxed">Benefits include:</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>improved image search relevance</li>
+                    <li>stronger semantic signals</li>
+                    <li>preserved page performance</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Canonical Tag -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">4.5 Canonical Tag Implementation</h2>
+                
+                <h3 class="text-xl font-semibold text-primary mb-4">Issue</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">The page originally lacked a canonical tag.</p>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Implementation</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">A canonical tag was added within the HTML <code class="bg-gray-800 text-gray-100 px-2 py-1 rounded">&lt;head&gt;</code> section.</p>
+                
+                <div class="mb-6">
+                    <img src="../assets/images/implemented-canonicaltag.png" alt="Canonical Tag" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Result</h3>
+                <p class="text-gray-700 leading-relaxed">The canonical tag ensures that search engines recognize the preferred URL for the page and prevents potential duplicate indexing issues.</p>
+            </div>
+        </section>
+
+        <!-- Open Graph -->
+        <section class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">4.6 Open Graph URL Correction</h2>
+                
+                <h3 class="text-xl font-semibold text-primary mb-4">Issue</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">The Open Graph URL originally referenced the GitHub profile instead of the portfolio page.</p>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Original</h3>
+                <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6"><code>&lt;meta property="og:url" content="https://github.com/janchristopherbuen"&gt;</code></pre>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Implementation</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">Updated Open Graph URL:</p>
+                
+                <div class="mb-6">
+                    <img src="../assets/images/implemented-open-graph.png" alt="Open Graph" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <h3 class="text-xl font-semibold text-primary mb-4">Result</h3>
+                <p class="text-gray-700 leading-relaxed">This ensures correct sharing previews when the portfolio link is shared on social platforms.</p>
+            </div>
+        </section>
+
+        <!-- Implementation Summary -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">Implementation Summary</h2>
+                
+                <div class="overflow-x-auto mb-8">
+                    <table class="w-full border border-gray-300">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th class="p-3 text-left">Optimization</th>
+                                <th class="p-3 text-left">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">H1 keyword optimization</td>
+                                <td class="p-3"><span class="text-accent font-semibold">Implemented</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Meta description refinement</td>
+                                <td class="p-3"><span class="text-accent font-semibold">Implemented</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Anchor text improvements</td>
+                                <td class="p-3"><span class="text-accent font-semibold">Implemented</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Image filename optimization</td>
+                                <td class="p-3"><span class="text-accent font-semibold">Implemented</span></td>
+                            </tr>
+                            <tr class="border-b border-gray-300">
+                                <td class="p-3">Canonical tag added</td>
+                                <td class="p-3"><span class="text-accent font-semibold">Implemented</span></td>
+                            </tr>
+                            <tr>
+                                <td class="p-3">Open Graph URL corrected</td>
+                                <td class="p-3"><span class="text-accent font-semibold">Implemented</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="text-gray-700 leading-relaxed text-center">These improvements strengthen both <strong>technical SEO signals and semantic relevance</strong>, contributing to improved search visibility and user experience.</p>
+            </div>
+        </section>
+
+        <!-- Explore More Projects -->
+        <section class="py-16 bg-primary text-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold mb-8">Explore More Projects</h2>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="../projects.html" class="bg-secondary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                        View All Projects
+                    </a>
+                    <a href="../contact.html" class="border-2 border-white hover:bg-white hover:text-primary text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2024 Jan Christopher Buen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="../assets/js/main.js"></script>
+</body>
+</html>
