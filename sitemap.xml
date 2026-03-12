@@ -2,11 +2,11 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://janchristopherbuen.github.io/portfolio/</loc></url>
-  <url><loc>https://janchristopherbuen.github.io/portfolio/about.html</loc></url>
-  <url><loc>https://janchristopherbuen.github.io/portfolio/projects.html</loc></url>
-  <url><loc>https://janchristopherbuen.github.io/portfolio/blog.html</loc></url>
-  <url><loc>https://janchristopherbuen.github.io/portfolio/contact.html</loc></url>
-  <url><loc>https://janchristopherbuen.github.io/portfolio/certificates.html</loc></url>
+  <url><loc>https://janchristopherbuen.github.io/portfolio/pages/about.html</loc></url>
+  <url><loc>https://janchristopherbuen.github.io/portfolio/pages/projects.html</loc></url>
+  <url><loc>https://janchristopherbuen.github.io/portfolio/pages/blog.html</loc></url>
+  <url><loc>https://janchristopherbuen.github.io/portfolio/pages/contact.html</loc></url>
+  <url><loc>https://janchristopherbuen.github.io/portfolio/pages/certificates.html</loc></url>
   <!-- project case studies -->
   <url><loc>https://janchristopherbuen.github.io/portfolio/projects/project-seo-blog-optimization.html</loc></url>
   <url><loc>https://janchristopherbuen.github.io/portfolio/projects/project-indexability-audit.html</loc></url>
