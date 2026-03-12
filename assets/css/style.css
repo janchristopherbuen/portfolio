@@ -1,64 +1,8 @@
-/* ===============================
-ROOT VARIABLES
-=============================== */
+/* This file combines modular CSS imports for performance and maintainability */
 
-:root{
-
---bg-main:#0f172a;
---bg-dark:#020617;
-
---text-main:#f1f5f9;
-
---accent:#38bdf8;
---accent-hover:#0ea5e9;
-
---shadow-soft:0 6px 20px rgba(0,0,0,0.35);
---shadow-hover:0 14px 35px rgba(0,0,0,0.45);
-
---radius:12px;
-
-}
-
-/* ===============================
-GLOBAL RESET
-=============================== */
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-font-family:'Poppins',sans-serif;
-background:var(--bg-main);
-color:var(--text-main);
-line-height:1.6;
-}
-
-/* ===============================
-IMAGES
-=============================== */
-
-img{
-max-width:100%;
-height:auto;
-display:block;
-}
-
-/* ===============================
-ACCESSIBILITY
-=============================== */
-
-a:focus-visible,
-button:focus-visible{
-outline:2px solid var(--accent);
-outline-offset:3px;
-}
+@import url("modules/base.css");
+@import url("modules/layout.css");
+@import url("modules/components.css");
 
 /* ===============================
 HEADER / NAVBAR

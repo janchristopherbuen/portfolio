@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meta Tag Analyzer</title>
+<meta name="description" content="Simple tool to check presence of title and description meta tags in HTML head.">
+<link rel="canonical" href="https://janchristopherbuen.github.io/portfolio/tools/meta-tag-analyzer.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Meta Tag Analyzer">
+<meta property="og:description" content="Simple tool to check presence of title and description meta tags in HTML head.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://janchristopherbuen.github.io/portfolio/tools/meta-tag-analyzer.html">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Meta Tag Analyzer">
+<meta name="twitter:description" content="Simple tool to check presence of title and description meta tags in HTML head.">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header>
+<nav class="navbar" aria-label="Primary navigation">
+    <div class="logo"><a href="../index.html">JC</a></div>
+    <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+    </ul>
+</nav>
+</header>
+<main>
+<section>
+    <h1 class="section-title">Meta Tag Analyzer</h1>
+    <form id="meta-form">
+        <textarea id="meta-input" rows="6" placeholder="Paste &lt;head&gt; markup here"></textarea>
+        <button type="submit" class="btn">Analyze</button>
+    </form>
+    <pre id="meta-output" aria-live="polite"></pre>
+</section>
+</main>
+<footer>
+<p>© 2026 Jan Christopher Buen</p>
+</footer>
+<script type="module" src="../assets/js/main.js"></script>
+</body>
+</html>

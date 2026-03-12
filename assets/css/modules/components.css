@@ -1,0 +1,258 @@
+/* components.css: reusable components such as buttons, cards, badges, etc. */
+
+.btn,
+.project-btn,
+.cert-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:12px 24px;
+    border-radius:8px;
+    font-weight:600;
+    text-decoration:none;
+    min-height:44px;
+    transition:.25s;
+}
+
+.btn{
+    background:var(--accent);
+    color:var(--bg-dark);
+    margin-top:15px;
+}
+
+.btn:hover{
+    background:var(--accent-hover);
+    transform:translateY(-2px);
+}
+
+.project-btn,
+.cert-btn{
+    background:var(--accent);
+    color:var(--bg-dark);
+    margin-top:18px;
+}
+
+.project-btn:hover,
+.cert-btn:hover{
+    background:var(--accent-hover);
+    transform:translateY(-2px);
+}
+
+.about-container{
+    max-width:680px;
+    margin:auto;
+    text-align:center;
+}
+
+.about-container p{
+    margin-bottom:18px;
+    line-height:1.8;
+}
+
+.about{
+    margin-bottom:80px;
+}
+
+.about-highlights{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    margin-top:30px;
+    max-width:700px;
+    margin-inline:auto;
+}
+
+.highlight{
+    background:var(--bg-dark);
+    padding:18px 22px;
+    border-radius:10px;
+    min-width:220px;
+    text-align:center;
+    transition:.3s;
+    box-shadow:var(--shadow-soft);
+}
+
+.highlight:hover{
+    transform:translateY(-5px);
+    box-shadow:var(--shadow-hover);
+}
+
+.about-tech{
+    margin-top:10px;
+    color:var(--accent);
+    font-size:14px;
+}
+
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:16px;
+    max-width:720px;
+    margin:auto;
+}
+
+.skills-intro{
+    text-align:center;
+    margin:12px auto 36px;
+    opacity:.85;
+    font-size:15px;
+    max-width:640px;
+}
+
+.skill-badge{
+    border:1px solid var(--accent);
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    transition:.25s ease;
+}
+
+.skill-badge:hover{
+    background:var(--accent);
+    color:var(--bg-dark);
+    transform:translateY(-2px);
+}
+
+.projects-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:32px;
+    max-width:960px;
+    margin:auto;
+    justify-items:center;
+}
+
+.projects-intro{
+    text-align:center;
+    max-width:640px;
+    margin:12px auto 40px;
+    opacity:.85;
+}
+
+.project-card{
+    background:var(--bg-dark);
+    padding:25px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow-soft);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    text-align:center;
+    max-width:300px;
+    width:100%;
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-6px);
+    box-shadow:var(--shadow-hover);
+}
+
+.project-card p{
+    flex-grow:1;
+}
+
+.project-tech{
+    font-size:13px;
+    color:var(--accent);
+    margin-top:10px;
+}
+
+/* certificates and contact similar... keep for brevity, replicating style.css as needed */
+
+.contact-container{
+    text-align:center;
+}
+
+#contact a{
+    color:var(--accent);
+    text-decoration:none;
+    font-weight:500;
+}
+
+#contact a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    background:var(--bg-dark);
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    font-size:14px;
+}
+
+/* certificates section */
+.certificate-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:28px;
+    max-width:1000px;
+    margin:auto;
+    justify-items:center;
+}
+
+.cert-intro{
+    text-align:center;
+    max-width:640px;
+    margin:0 auto 40px;
+    opacity:.85;
+}
+
+.certificate-card{
+    background:var(--bg-dark);
+    padding:20px;
+    border-radius:var(--radius);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    text-align:center;
+    max-width:300px;
+    box-shadow:var(--shadow-soft);
+    transition:.25s ease;
+}
+
+.certificate-card:hover{
+    transform:translateY(-6px);
+    box-shadow:var(--shadow-hover);
+}
+
+.certificate-card img{
+    height:180px;
+    object-fit:contain;
+    background:var(--bg-dark);
+    border-radius:8px;
+    padding:8px;
+    margin-bottom:14px;
+}
+
+.certificate-card h2{
+    min-height:48px;
+}
+
+/* scroll animations */
+.project-card,
+.skill-badge,
+.certificate-card,
+.highlight{
+    opacity:0;
+    transform:translateY(25px);
+    transition:all .6s ease;
+    will-change:transform,opacity;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* mobile navigation */
+.menu-toggle{
+    display:none;
+    font-size:26px;
+    cursor:pointer;
+    color:var(--accent);
+}
