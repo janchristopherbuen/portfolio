@@ -198,7 +198,7 @@ This improves:
 
 ### Screenshot
 
-![Image Element Inspection](images/image-seo.png)
+<img src="images/image-seo.png" alt="Image Element Inspection" loading="lazy" decoding="async">
 
 ### Code Example
 
@@ -480,7 +480,7 @@ The original image filename was generic.
 
 Original filename:
 
-![Image Element Inspection](images/image-seo.png)
+<img src="images/image-seo.png" alt="Image Element Inspection" loading="lazy" decoding="async">
 
 ### Implementation
 
@@ -488,7 +488,7 @@ The image filename was updated to include descriptive keywords.
 
 Updated filename:
 
-![Image Element Inspection](images/implemented-image-seo.png)
+<img src="images/implemented-image-seo.png" alt="Image Element Inspection" loading="lazy" decoding="async">
 
 Optimized profile image using WebP format, descriptive filename, and keyword-focused alt text to improve SEO, accessibility, and page performance.
 
