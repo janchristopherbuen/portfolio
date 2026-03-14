@@ -64,8 +64,14 @@
   min-height:3rem;
   padding:.9rem 1.25rem;
   border-radius:999px;
-  text-decoration:none;
+  font-family:"Manrope",sans-serif;
+  font-size:var(--text-base);
   font-weight:800;
+  line-height:1.6;
+  letter-spacing:normal;
+  text-align:center;
+  text-decoration:none;
+  text-transform:none;
   transition:transform .2s ease,background-color .2s ease,border-color .2s ease,color .2s ease;
 }
 
@@ -287,10 +293,24 @@ figcaption{
   border-radius:8px;
 }
 
+.case-study-content figure{
+  max-width:min(100%,46rem);
+  margin-inline:auto;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:20px;
+  background:rgba(9,18,37,.78);
+  box-shadow:0 18px 45px rgba(3,8,20,.28);
+}
+
 .case-study-content figure img{
-  max-width:100%;
+  display:block;
+  width:100%;
   height:auto;
-  border-radius:8px;
+  max-height:min(32rem,70vh);
+  object-fit:contain;
+  border-radius:0;
+  background:rgba(3,8,20,.22);
 }
 
 .case-image{
@@ -378,8 +398,7 @@ figcaption{
   margin-bottom:0;
 }
 
-.contact-card .button,
-.certificate-card .button{
+.contact-card .button{
   margin-top:auto;
 }
 
@@ -444,7 +463,12 @@ figcaption{
 }
 
 .case-study-content figcaption{
-  font-size:var(--text-xs);
+  padding:.95rem 1.15rem;
+  border-top:1px solid var(--line);
+  font-size:var(--text-sm);
+  line-height:1.5;
+  color:var(--text-muted);
+  background:rgba(255,255,255,.03);
 }
 
 .case-study-content .audit-score{
