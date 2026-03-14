@@ -487,12 +487,16 @@ figcaption{
   display:grid;
   gap:2rem;
   margin-top:2rem;
-  align-items:start;
+  align-items:stretch;
   grid-template-columns:minmax(0,1fr) minmax(0,1fr);
 }
 
 .project-showcase__media{
+  order:2;
   margin:0;
+  display:flex;
+  flex-direction:column;
+  height:100%;
   max-width:none !important;
   border:1px solid var(--line);
   border-radius:1rem;
@@ -504,6 +508,7 @@ figcaption{
 .project-showcase__trigger{
   display:block;
   width:100%;
+  flex:1 1 auto;
   padding:0;
   border:0;
   background:transparent;
@@ -518,7 +523,8 @@ figcaption{
 .project-showcase__image{
   display:block;
   width:100%;
-  height:auto;
+  height:100%;
+  min-height:18rem;
   max-height:min(32rem,70vh);
   object-fit:contain;
   background:rgba(3,8,20,.22);
@@ -540,8 +546,10 @@ figcaption{
 }
 
 .project-showcase__content{
+  order:1;
   display:grid;
-  gap:1.25rem;
+  align-content:start;
+  gap:1rem;
   min-height:100%;
   padding:1.5rem;
   border:1px solid var(--line);
@@ -556,6 +564,21 @@ figcaption{
 
 .project-showcase__content > :last-child{
   margin-bottom:0;
+}
+
+.project-showcase__content h3{
+  margin:0;
+}
+
+.project-showcase__content p{
+  margin:0;
+}
+
+.project-showcase__content pre,
+.project-showcase__content table,
+.project-showcase__content ul,
+.project-showcase__content ol{
+  margin:0;
 }
 
 .project-showcase__content .rounded-2xl{
@@ -763,6 +786,11 @@ figcaption{
 
   .project-showcase{
     grid-template-columns:1fr;
+  }
+
+  .project-showcase__media,
+  .project-showcase__content{
+    order:initial;
   }
 
   .project-lightbox{
