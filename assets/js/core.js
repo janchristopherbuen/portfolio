@@ -55,3 +55,78 @@ export function initYear() {
     node.textContent = String(new Date().getFullYear());
   });
 }
+
+export function initProjectLightbox() {
+  const triggers = Array.from(document.querySelectorAll(".project-showcase__trigger"));
+  if (!triggers.length) {
+    return;
+  }
+
+  let previousActive = null;
+  let activeTrigger = null;
+
+  const lightbox = document.createElement("div");
+  lightbox.className = "project-lightbox";
+  lightbox.hidden = true;
+  lightbox.setAttribute("aria-hidden", "true");
+  lightbox.innerHTML = `
+    <div class="project-lightbox__dialog" role="dialog" aria-modal="true" aria-labelledby="project-lightbox-title">
+      <button class="project-lightbox__close" type="button" aria-label="Close image preview">×</button>
+      <figure class="project-lightbox__figure">
+        <img class="project-lightbox__image" alt="">
+        <figcaption class="project-lightbox__caption" id="project-lightbox-title"></figcaption>
+      </figure>
+    </div>
+  `;
+
+  const closeButton = lightbox.querySelector(".project-lightbox__close");
+  const lightboxImage = lightbox.querySelector(".project-lightbox__image");
+  const lightboxCaption = lightbox.querySelector(".project-lightbox__caption");
+  const dialog = lightbox.querySelector(".project-lightbox__dialog");
+
+  function closeLightbox() {
+    lightbox.hidden = true;
+    lightbox.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("project-lightbox-open");
+    document.removeEventListener("keydown", handleKeydown);
+    if (activeTrigger) {
+      activeTrigger.focus();
+    } else if (previousActive instanceof HTMLElement) {
+      previousActive.focus();
+    }
+    activeTrigger = null;
+  }
+
+  function handleKeydown(event) {
+    if (event.key === "Escape") {
+      closeLightbox();
+    }
+  }
+
+  function openLightbox(trigger) {
+    previousActive = document.activeElement;
+    activeTrigger = trigger;
+    lightboxImage.src = trigger.dataset.lightboxImage || "";
+    lightboxImage.alt = trigger.dataset.lightboxAlt || "";
+    lightboxCaption.textContent = trigger.dataset.lightboxCaption || "";
+    lightbox.hidden = false;
+    lightbox.setAttribute("aria-hidden", "false");
+    document.body.classList.add("project-lightbox-open");
+    document.addEventListener("keydown", handleKeydown);
+    closeButton.focus();
+  }
+
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("click", () => openLightbox(trigger));
+  });
+
+  closeButton.addEventListener("click", closeLightbox);
+
+  lightbox.addEventListener("click", (event) => {
+    if (!dialog.contains(event.target)) {
+      closeLightbox();
+    }
+  });
+
+  document.body.appendChild(lightbox);
+}

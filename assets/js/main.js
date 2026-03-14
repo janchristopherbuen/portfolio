@@ -1,4 +1,4 @@
-import { initNavigation, initReveal, initYear } from "./core.js";
+import { initNavigation, initProjectLightbox, initReveal, initYear } from "./core.js";
 import { loadGitHubRepos } from "./github.js";
 import { initMetaAnalyzer, initRobotsValidator, initSchemaGenerator, initSitemapValidator } from "./tools.js";
 
@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initNavigation();
   initReveal();
   initYear();
+  initProjectLightbox();
   loadGitHubRepos("github-projects");
   initMetaAnalyzer();
   initRobotsValidator();
