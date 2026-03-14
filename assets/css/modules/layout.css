@@ -113,14 +113,18 @@
 }
 
 .case-study-content > section > div{
-  width:min(calc(100% - 2rem), 900px) !important;
-  max-width:900px !important;
+  width:min(calc(100% - 2rem), var(--case-content-max, 900px)) !important;
+  max-width:var(--case-content-max, 900px) !important;
   margin-left:auto;
   margin-right:auto;
 }
 
 .case-study-content section{
   margin-bottom:60px;
+}
+
+.project-showcase-shell{
+  --case-content-max: 1120px;
 }
 
 @media (max-width:1200px){

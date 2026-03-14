@@ -56,6 +56,22 @@ export function initYear() {
   });
 }
 
+export function initProjectShowcases() {
+  document.querySelectorAll(".project-showcase").forEach((showcase) => {
+    const article = showcase.closest("article");
+    if (!article) {
+      return;
+    }
+
+    article.setAttribute("class", "project-showcase-section");
+
+    const shell = article.parentElement;
+    if (shell && shell.parentElement && shell.parentElement.tagName === "SECTION") {
+      shell.classList.add("project-showcase-shell");
+    }
+  });
+}
+
 export function initProjectLightbox() {
   const triggers = Array.from(document.querySelectorAll(".project-showcase__trigger"));
   if (!triggers.length) {
