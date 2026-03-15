@@ -52,6 +52,20 @@
   justify-self:end;
 }
 
+.hero__media--portrait{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:min(100%, 380px);
+}
+
+.hero__portrait-image{
+  display:block;
+  width:100%;
+  height:auto;
+  margin-inline:auto;
+}
+
 .section{
   padding:3rem 0 4.5rem;
 }

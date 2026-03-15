@@ -391,6 +391,8 @@ figcaption{
   flex:1 1 auto;
   flex-direction:column;
   gap:.75rem;
+  align-items:center;
+  text-align:center;
 }
 
 .tool-card__body h2{
