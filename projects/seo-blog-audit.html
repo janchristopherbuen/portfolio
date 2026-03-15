@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SEO Audit - SEO Blog Project | Jan Christopher Buen</title>
   <meta name="description" content="Technical SEO analysis evaluating metadata implementation, crawl management, structured data, and website responsiveness.">
-  <meta name="robots" content="index,follow">
+  <meta name="robots" content="noindex,follow">
   <link rel="canonical" href="https://janchristopherbuen.github.io/portfolio/projects/seo-blog-audit.html">
   <meta property="og:title" content="SEO Audit - SEO Blog Project">
   <meta property="og:description" content="Technical SEO analysis evaluating metadata implementation, crawl management, structured data, and website responsiveness.">
@@ -16,44 +16,27 @@
   <meta name="twitter:title" content="SEO Audit - SEO Blog Project">
   <meta name="twitter:description" content="Technical SEO analysis evaluating metadata implementation, crawl management, structured data, and website responsiveness.">
   <meta name="twitter:image" content="https://janchristopherbuen.github.io/portfolio/assets/images/projects/seo-blog-audit-lighthouse-audit.png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" type="image/png" href="../assets/images/jcb-laptop-logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/jcb-laptop-favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/jcb-laptop-touch-icon.png">
   <link rel="stylesheet" href="../assets/css/style.css">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            ink: "#0f172a",
-            mist: "#e2e8f0",
-            panel: "#111827",
-            accent: "#34d399",
-            accentSoft: "#022c22",
-            warn: "#fbbf24",
-            danger: "#fb7185"
-          },
-          boxShadow: {
-            audit: "0 24px 50px rgba(15, 23, 42, 0.35)"
-          }
-        }
-      }
-    };
-  </script>
 </head>
 <body class="bg-slate-950 text-slate-100">
-  <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/90 backdrop-blur">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4" aria-label="Primary navigation">
-      <a class="site-logo" href="../index.html" aria-label="Jan Christopher Buen home"><img class="site-logo__image" src="../assets/images/jcb-laptop-logo.png" alt="JCB logo"></a>
-            <div class="flex gap-6 text-sm text-slate-300">
-        <a href="../index.html" class="hover:text-white">Home</a>
-        <a href="../about.html" class="hover:text-white">About</a>
-        <a href="../projects.html" class="text-white">Projects</a>
-        <a href="../tools/index.html" class="hover:text-white">Tools</a>
-        <a href="../blog.html" class="hover:text-white">Blog</a>
-        <a href="../certificates.html" class="hover:text-white">Certificates</a>
-        <a href="../contact.html" class="hover:text-white">Contact</a>
-      </div>
-    </nav>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="site-logo" href="../index.html" aria-label="Jan Christopher Buen home"><img class="site-logo__image" src="../assets/images/jcb-laptop-logo-header.png" alt="Jan Christopher Buen logo" width="384" height="256" decoding="async"></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="../index.html" data-nav="index.html">Home</a>
+        <a href="../about.html" data-nav="about.html">About</a>
+        <a href="../projects.html" data-nav="projects.html">Projects</a>
+        <a href="../tools/index.html" data-nav="tools/index.html">Tools</a>
+        <a href="../blog.html" data-nav="blog.html">Blog</a>
+        <a href="../certificates.html" data-nav="certificates.html">Certificates</a>
+        <a href="../contact.html" data-nav="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main class="case-study-content">
