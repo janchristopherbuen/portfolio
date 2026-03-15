@@ -1,15 +1,16 @@
-.brand{
+.site-logo{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  width:3rem;
-  height:3rem;
-  border-radius:18px;
-  background:linear-gradient(135deg, var(--accent), var(--highlight));
-  color:var(--text-dark);
-  font-family:"Space Grotesk",sans-serif;
-  font-weight:700;
+  flex-shrink:0;
   text-decoration:none;
+}
+
+.site-logo__image{
+  display:block;
+  width:128px;
+  height:auto;
+  max-width:none;
 }
 
 .site-nav a{
