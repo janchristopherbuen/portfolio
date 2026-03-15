@@ -163,11 +163,38 @@
 .card--project{
   display:flex;
   flex-direction:column;
-  align-items:flex-start;
+  align-items:stretch;
+  height:100%;
 }
 
-.card--project .button{
+.project-card__body{
+  display:flex;
+  flex:1 1 auto;
+  flex-direction:column;
+  gap:.75rem;
+  align-items:center;
+  text-align:center;
+}
+
+.project-card__body h3,
+.project-card__body p{
+  margin:0;
+}
+
+.project-card__body .tag{
+  margin-bottom:0;
+}
+
+.project-card__actions{
   margin-top:auto;
+  display:flex;
+  justify-content:center;
+  width:100%;
+  padding-top:.35rem;
+}
+
+.project-card__actions .button{
+  align-self:center;
 }
 
 .card h3,
