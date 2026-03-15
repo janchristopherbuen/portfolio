@@ -347,6 +347,13 @@ figcaption{
   gap:1.25rem;
 }
 
+.tools-grid{
+  display:grid;
+  gap:1.25rem;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  align-items:stretch;
+}
+
 .contact-grid{
   grid-template-columns:repeat(4,minmax(0,1fr));
   align-items:stretch;
@@ -368,6 +375,38 @@ figcaption{
   display:grid;
   gap:.9rem;
   min-height:100%;
+}
+
+.tool-card{
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  height:100%;
+  gap:.9rem;
+  padding:1.25rem;
+}
+
+.tool-card__body{
+  display:flex;
+  flex:1 1 auto;
+  flex-direction:column;
+  gap:.75rem;
+}
+
+.tool-card__body h2{
+  margin:0;
+}
+
+.tool-card__body p{
+  margin:0;
+}
+
+.tool-card__actions{
+  margin-top:auto;
+  display:flex;
+  justify-content:center;
+  width:100%;
+  padding-top:.25rem;
 }
 
 .contact-card{
@@ -464,6 +503,10 @@ figcaption{
 }
 
 .contact-card__actions .button{
+  align-self:center;
+}
+
+.tool-card__actions .button{
   align-self:center;
 }
 
@@ -890,10 +933,18 @@ figcaption{
   .contact-grid{
     grid-template-columns:repeat(2,minmax(0,1fr));
   }
+
+  .tools-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
 }
 
 @media (max-width:760px){
   .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .tools-grid{
     grid-template-columns:1fr;
   }
 }
