@@ -49,7 +49,7 @@
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
         <span></span><span></span><span></span>
       </button>
-            <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
         <a href="index.html" data-nav="index.html">Home</a>
         <a href="about.html" data-nav="about.html">About</a>
         <a href="projects.html" data-nav="projects.html">Projects</a>
@@ -64,7 +64,6 @@
   <main id="main-content">
     <section class="hero">
       <div class="hero__content hero__content--narrow" data-reveal>
-        
         <h1>Static technical SEO articles with clean metadata and article schema.</h1>
         <p class="lead">The blog index includes article cards with title, author, publication date, reading time, and SEO-friendly summaries.</p>
       </div>
@@ -73,25 +72,37 @@
     <section class="section">
       <div class="grid grid--three">
         <article class="card card--article" data-reveal>
-          <p class="tag">Checklist</p>
-          <h2>Technical SEO Checklist</h2>
-          <p class="meta-line">By Jan Christopher Buen • March 12, 2026 • 6 min read</p>
-          <p>A practical technical SEO checklist for audits covering crawlability, indexation, performance, and structured data.</p>
-          <a class="button button--primary" href="blog/technical-seo-checklist.html">Read article</a>
+          <div class="blog-card__body">
+            <p class="tag">Checklist</p>
+            <h2>Technical SEO Checklist</h2>
+            <p class="meta-line">By Jan Christopher Buen • March 12, 2026 • 6 min read</p>
+            <p>A practical technical SEO checklist for audits covering crawlability, indexation, performance, and structured data.</p>
+          </div>
+          <div class="blog-card__actions">
+            <a class="button button--primary" href="blog/technical-seo-checklist.html">Read article</a>
+          </div>
         </article>
         <article class="card card--article" data-reveal>
-          <p class="tag">Guide</p>
-          <h2>robots.txt Guide</h2>
-          <p class="meta-line">By Jan Christopher Buen • March 12, 2026 • 5 min read</p>
-          <p>What robots.txt can and cannot do, plus the rules that matter during a technical SEO review.</p>
-          <a class="button button--primary" href="blog/robots-txt-guide.html">Read article</a>
+          <div class="blog-card__body">
+            <p class="tag">Guide</p>
+            <h2>robots.txt Guide</h2>
+            <p class="meta-line">By Jan Christopher Buen • March 12, 2026 • 5 min read</p>
+            <p>What robots.txt can and cannot do, plus the rules that matter during a technical SEO review.</p>
+          </div>
+          <div class="blog-card__actions">
+            <a class="button button--primary" href="blog/robots-txt-guide.html">Read article</a>
+          </div>
         </article>
         <article class="card card--article" data-reveal>
-          <p class="tag">Canonicalization</p>
-          <h2>Canonical Tags Guide</h2>
-          <p class="meta-line">By Jan Christopher Buen • March 12, 2026 • 5 min read</p>
-          <p>How to use canonical tags correctly to consolidate duplicate URLs and support clean indexing signals.</p>
-          <a class="button button--primary" href="blog/canonical-tags-guide.html">Read article</a>
+          <div class="blog-card__body">
+            <p class="tag">Canonicalization</p>
+            <h2>Canonical Tags Guide</h2>
+            <p class="meta-line">By Jan Christopher Buen • March 12, 2026 • 5 min read</p>
+            <p>How to use canonical tags correctly to consolidate duplicate URLs and support clean indexing signals.</p>
+          </div>
+          <div class="blog-card__actions">
+            <a class="button button--primary" href="blog/canonical-tags-guide.html">Read article</a>
+          </div>
         </article>
       </div>
     </section>
@@ -103,4 +114,3 @@
   <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>
-
