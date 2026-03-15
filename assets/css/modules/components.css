@@ -404,6 +404,8 @@ figcaption{
   flex-direction:column;
   gap:.5rem;
   width:100%;
+  align-items:center;
+  text-align:center;
 }
 
 .certificate-card__meta h3{
@@ -420,15 +422,6 @@ figcaption{
   justify-content:center;
   width:100%;
   padding-top:.35rem;
-}
-
-.certificate-provider{
-  margin:0;
-  color:var(--accent);
-  font-size:var(--text-xs);
-  font-weight:800;
-  letter-spacing:.16em;
-  text-transform:uppercase;
 }
 
 .contact-card p,
