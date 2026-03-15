@@ -160,6 +160,16 @@
   border-color:rgba(135,244,193,.28);
 }
 
+.card--project{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+.card--project .button{
+  margin-top:auto;
+}
+
 .card h3,
 .panel h3{
   margin-bottom:.85rem;
