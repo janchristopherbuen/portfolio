@@ -359,6 +359,7 @@ figcaption{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:2rem;
+  align-items:stretch;
 }
 
 .contact-card,
@@ -371,7 +372,9 @@ figcaption{
 .certificate-card{
   display:flex;
   flex-direction:column;
-  align-items:flex-start;
+  align-items:stretch;
+  height:100%;
+  gap:1rem;
 }
 
 .certificate-card__media{
@@ -396,10 +399,27 @@ figcaption{
 }
 
 .certificate-card__meta{
-  display:grid;
+  display:flex;
+  flex:1 1 auto;
+  flex-direction:column;
   gap:.5rem;
   width:100%;
-  flex:1 1 auto;
+}
+
+.certificate-card__meta h3{
+  margin:0;
+}
+
+.certificate-card__meta p:last-child{
+  margin-top:0;
+}
+
+.certificate-card__actions{
+  margin-top:auto;
+  display:flex;
+  justify-content:center;
+  width:100%;
+  padding-top:.35rem;
 }
 
 .certificate-provider{
@@ -420,9 +440,8 @@ figcaption{
   margin-top:auto;
 }
 
-.certificate-card .button{
-  margin-top:auto;
-  align-self:flex-start;
+.certificate-card__actions .button{
+  align-self:center;
 }
 
 .contact-card:hover,
