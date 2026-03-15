@@ -348,7 +348,8 @@ figcaption{
 }
 
 .contact-grid{
-  grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  align-items:stretch;
 }
 
 .certificate-grid{
@@ -367,6 +368,39 @@ figcaption{
   display:grid;
   gap:.9rem;
   min-height:100%;
+}
+
+.contact-card{
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  height:100%;
+  gap:1rem;
+}
+
+.contact-card__body{
+  display:flex;
+  flex:1 1 auto;
+  flex-direction:column;
+  gap:.75rem;
+  align-items:center;
+  text-align:center;
+}
+
+.contact-card__body h2{
+  margin:0;
+}
+
+.contact-card__body p{
+  margin:0;
+}
+
+.contact-card__actions{
+  margin-top:auto;
+  display:flex;
+  justify-content:center;
+  width:100%;
+  padding-top:.35rem;
 }
 
 .certificate-card{
@@ -429,8 +463,8 @@ figcaption{
   margin-bottom:0;
 }
 
-.contact-card .button{
-  margin-top:auto;
+.contact-card__actions .button{
+  align-self:center;
 }
 
 .certificate-card__actions .button{
@@ -826,7 +860,6 @@ figcaption{
     align-items:flex-start;
   }
 
-  .contact-grid,
   .certificate-grid{
     grid-template-columns:1fr;
   }
@@ -850,6 +883,18 @@ figcaption{
 
   .project-lightbox__dialog{
     padding:.85rem;
+  }
+}
+
+@media (max-width:1100px){
+  .contact-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media (max-width:760px){
+  .contact-grid{
+    grid-template-columns:1fr;
   }
 }
 
