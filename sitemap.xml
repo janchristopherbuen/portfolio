@@ -37,24 +37,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://janchristopherbuen.github.io/portfolio/projects/indexability-audit.html</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://janchristopherbuen.github.io/portfolio/projects/site-architecture-audit.html</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://janchristopherbuen.github.io/portfolio/projects/books-to-scrape-technical-seo-audit.html</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://janchristopherbuen.github.io/portfolio/projects/portfolio-technical-seo-audit-and-implementation.html</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
