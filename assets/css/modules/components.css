@@ -182,10 +182,6 @@
   margin:0;
 }
 
-.project-card__body .tag{
-  margin-bottom:0;
-}
-
 .project-card__actions{
   margin-top:auto;
   display:flex;
