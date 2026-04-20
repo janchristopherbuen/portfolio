@@ -1,20 +1,13 @@
 import type { Metadata } from "next";
 
 import { SectionTitle } from "@/components/section-title";
-import { siteConfig } from "@/data/site";
+import { contactLinks, contactMethods } from "@/data/contact";
 
 export const metadata: Metadata = {
   title: "Contact",
   description:
     "Get in touch with Jan Christopher Buen for WordPress development, WooCommerce work, and technical SEO collaboration."
 };
-
-const contactItems = [
-  { label: "Email", value: siteConfig.email, href: `mailto:${siteConfig.email}` },
-  { label: "Phone", value: siteConfig.phone, href: `tel:${siteConfig.phone.replace(/\s+/g, "")}` },
-  { label: "Location", value: siteConfig.location },
-  { label: "Portfolio", value: siteConfig.portfolioUrl, href: siteConfig.portfolioUrl }
-];
 
 export default function ContactPage() {
   return (
@@ -27,12 +20,13 @@ export default function ContactPage() {
 
       <section className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="space-y-4">
-          {contactItems.map((item) => (
+          {contactMethods.map((item) => (
             <article
               key={item.label}
               className="rounded-[1.75rem] border border-line bg-white/[0.03] p-6"
             >
               <p className="text-sm uppercase tracking-[0.2em] text-accent">{item.label}</p>
+              <p className="mt-2 text-sm leading-7 text-muted">{item.description}</p>
               {item.href ? (
                 <a
                   href={item.href}
@@ -45,6 +39,23 @@ export default function ContactPage() {
               )}
             </article>
           ))}
+
+          <div className="grid gap-4 sm:grid-cols-3">
+            {contactLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-[1.5rem] border border-line bg-white/[0.03] p-5 transition hover:border-accent/40 hover:bg-white/[0.05]"
+              >
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+                  {link.label}
+                </p>
+                <p className="mt-3 text-sm leading-6 text-muted">{link.description}</p>
+              </a>
+            ))}
+          </div>
         </div>
 
         <section className="rounded-[2rem] border border-line bg-white/[0.03] p-6 sm:p-8">

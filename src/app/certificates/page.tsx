@@ -16,7 +16,7 @@ export default function CertificatesPage() {
       <SectionTitle
         eyebrow="Certificates"
         title="Certifications that reinforce technical SEO and front-end foundations."
-        description="Structured learning across SEO platforms, technical search workflows, and responsive web development."
+        description="Structured learning across SEO platforms, technical search workflows, and responsive web development, with direct verification links for every credential."
       />
       <div className="grid gap-6 lg:grid-cols-2">
         {certificates.map((certificate) => (

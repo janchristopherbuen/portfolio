@@ -31,7 +31,7 @@ export default function HomePage() {
           <SectionTitle
             eyebrow="Featured Projects"
             title="Selected work across WooCommerce, landing pages, and technical SEO."
-            description="A concise view of recent portfolio work with an emphasis on practical builds and optimization outcomes."
+            description="A concise view of portfolio work shaped around WordPress execution, store usability, and technical SEO improvements."
           />
           <Link
             href="/projects"
@@ -52,7 +52,7 @@ export default function HomePage() {
           <SectionTitle
             eyebrow="Certificates"
             title="Training that supports both hands-on execution and search strategy."
-            description="Recent certifications across SEO, search tooling, and responsive web development."
+            description="Recent certifications across SEO, search tooling, and responsive web development, each paired with direct verification links."
           />
           <Link
             href="/certificates"

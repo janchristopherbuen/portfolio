@@ -1,9 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
+import { navigationItems } from "@/data/navigation";
 import { siteConfig } from "@/data/site";
 import { cn } from "@/lib/utils";
 
@@ -15,13 +17,24 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-background/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-container items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <Link href="/" className="min-w-0" onClick={() => setOpen(false)}>
-          <span className="block font-display text-lg tracking-tight text-foreground">
-            Jan Christopher Buen
-          </span>
-          <span className="mt-1 block text-xs uppercase tracking-[0.22em] text-muted">
-            WordPress & SEO
-          </span>
+        <Link href="/" className="flex min-w-0 items-center gap-3" onClick={() => setOpen(false)}>
+          <div className="relative h-12 w-12 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04]">
+            <Image
+              src={siteConfig.logoPath}
+              alt="Jan Christopher Buen logo"
+              fill
+              className="object-cover"
+              sizes="48px"
+            />
+          </div>
+          <div className="min-w-0">
+            <span className="block truncate font-display text-lg tracking-tight text-foreground">
+              {siteConfig.name}
+            </span>
+            <span className="mt-1 block truncate text-xs uppercase tracking-[0.22em] text-muted">
+              WordPress & SEO
+            </span>
+          </div>
         </Link>
 
         <button
@@ -48,7 +61,7 @@ export function Navbar() {
           )}
           aria-label="Primary"
         >
-          {siteConfig.navLinks.map((link) => {
+          {navigationItems.map((link) => {
             const isActive =
               link.href === "/" ? currentPath === "/" : currentPath.startsWith(link.href);
 

@@ -14,7 +14,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Box & Bloom — WooCommerce Website Build & SEO",
+    title: "Box & Bloom - WooCommerce Website Build & SEO",
     description:
       "A WooCommerce store build focused on improving store structure, product discovery, and launch-ready search visibility.",
     highlights: [
@@ -38,12 +38,12 @@ export const projects: Project[] = [
   {
     title: "Conversion-Focused Landing Page",
     description:
-      "A responsive landing page optimized for lead generation, clarity, and action with a strong emphasis on conversion-first user flow.",
+      "A responsive landing page optimized for lead generation, clarity, and action with a strong emphasis on conversion-focused UX.",
     highlights: [
       "Built a responsive landing page using Astra templates.",
       "Focused on lead generation and conversion-focused UX."
     ],
-    tags: ["Landing Pages", "Astra", "CRO", "UX"],
+    tags: ["Landing Pages", "Astra", "Lead Generation", "UX"],
     featured: true
   },
   {

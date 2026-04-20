@@ -10,19 +10,6 @@ export const metadata: Metadata = {
     "Learn more about Jan Christopher Buen, a WordPress Developer and Technical SEO Specialist focused on performance, usability, and search visibility."
 };
 
-const summary =
-  "WordPress Developer and Technical SEO Specialist with hands-on experience building and optimizing websites using Elementor Pro, custom child themes, and WooCommerce. Skilled in developing conversion-focused landing pages, implementing local SEO strategies, and managing full WordPress ecosystems including hosting, security, backups, and analytics. Focused on improving site performance, user experience, and search visibility.";
-
-const expertise = [
-  "WordPress Website Development",
-  "Elementor Pro & Custom Child Themes",
-  "WooCommerce Setup & Optimization",
-  "Conversion-Focused Landing Pages",
-  "Technical SEO Implementation",
-  "Local SEO & Backlink Building",
-  "Website Performance Optimization"
-];
-
 export default function AboutPage() {
   return (
     <div className="space-y-20 pb-16 sm:space-y-24">
@@ -30,7 +17,7 @@ export default function AboutPage() {
         <SectionTitle
           eyebrow="About"
           title="A WordPress developer with a practical, SEO-aware build process."
-          description={summary}
+          description={siteConfig.summary}
         />
       </section>
 
@@ -38,7 +25,7 @@ export default function AboutPage() {
         <article className="rounded-[2rem] border border-line bg-white/[0.03] p-8">
           <h2 className="font-display text-3xl tracking-tight text-foreground">What I do</h2>
           <ul className="mt-6 space-y-4 text-sm leading-7 text-slate-200">
-            {expertise.map((item) => (
+            {siteConfig.coreExpertise.map((item) => (
               <li key={item} className="flex gap-3">
                 <span className="mt-2 h-2 w-2 rounded-full bg-accent" aria-hidden="true" />
                 <span>{item}</span>

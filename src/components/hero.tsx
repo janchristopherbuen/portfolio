@@ -45,7 +45,7 @@ export function Hero() {
                 aria-hidden="true"
               />
               <Image
-                src="/images/hero-image.jpg"
+                src={siteConfig.heroImagePath}
                 alt="Jan Christopher Buen portfolio hero image"
                 width={1200}
                 height={1400}
