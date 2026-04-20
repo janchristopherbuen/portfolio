@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { siteConfig } from "@/data/site";
@@ -9,7 +10,7 @@ export function Hero() {
         className="absolute inset-x-0 top-0 -z-10 h-[32rem] bg-radial-shell opacity-100"
         aria-hidden="true"
       />
-      <div className="grid gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(280px,0.85fr)] lg:items-end">
+      <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(320px,0.95fr)] lg:gap-14">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.28em] text-accent">
             {siteConfig.name}
@@ -36,20 +37,22 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 shadow-soft">
-          <div className="rounded-[1.5rem] border border-accent/20 bg-slate-950/60 p-6">
-            <p className="text-sm uppercase tracking-[0.22em] text-accent">Focused Delivery</p>
-            <div className="mt-6 space-y-5">
-              {[
-                "Responsive WordPress websites and landing pages",
-                "WooCommerce experiences built for usability and conversion",
-                "Technical SEO work that supports performance and visibility"
-              ].map((point) => (
-                <div key={point} className="flex gap-3">
-                  <span className="mt-2 h-2 w-2 rounded-full bg-accent" aria-hidden="true" />
-                  <p className="text-sm leading-7 text-slate-200">{point}</p>
-                </div>
-              ))}
+        <div className="w-full">
+          <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-3 shadow-soft sm:p-4">
+            <div className="relative overflow-hidden rounded-[1.5rem] border border-white/10 bg-panel">
+              <div
+                className="pointer-events-none absolute inset-x-0 top-0 z-10 h-24 bg-gradient-to-b from-background/50 to-transparent"
+                aria-hidden="true"
+              />
+              <Image
+                src="/images/hero-image.jpg"
+                alt="Jan Christopher Buen portfolio hero image"
+                width={1200}
+                height={1400}
+                priority
+                className="h-full w-full object-cover"
+                sizes="(max-width: 1024px) 100vw, 42vw"
+              />
             </div>
           </div>
         </div>
